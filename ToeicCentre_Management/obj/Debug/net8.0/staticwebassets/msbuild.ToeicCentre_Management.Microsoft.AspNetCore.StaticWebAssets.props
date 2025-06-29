@@ -1,5 +1,37 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\admin.css))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>admin.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\admin.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\admin.js))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>admin.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\admin.js))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\css\site.css))">
       <SourceType>Package</SourceType>
       <SourceId>ToeicCentre_Management</SourceId>
@@ -1088,6 +1120,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\style.css))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\toeic-listening-1-2.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>toeic-listening-1-2.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\toeic-listening-1-2.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\toeic-listening-2-1.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>toeic-listening-2-1.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\toeic-listening-2-1.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ToeicCentre_Management.bundle.scp.css))">
       <SourceType>Package</SourceType>
       <SourceId>ToeicCentre_Management</SourceId>
@@ -1103,6 +1167,422 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ToeicCentre_Management.bundle.scp.css))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\1bce940d-6843-4944-aaa6-3537ea8f04ee_[AMV] THE GIFT - HIRAI DAI 平井 大 - OST Doraemon The Movie 2019.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/1bce940d-6843-4944-aaa6-3537ea8f04ee_[AMV] THE GIFT - HIRAI DAI 平井 大 - OST Doraemon The Movie 2019.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\1bce940d-6843-4944-aaa6-3537ea8f04ee_[AMV] THE GIFT - HIRAI DAI 平井 大 - OST Doraemon The Movie 2019.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\2fef9554-9151-426e-92dc-bb6b88b98a1d_toeic_boat.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/2fef9554-9151-426e-92dc-bb6b88b98a1d_toeic_boat.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\2fef9554-9151-426e-92dc-bb6b88b98a1d_toeic_boat.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\35a16dbd-88ec-4802-aeaa-d82564238f2e_ec4193855307b7db516c8010d808410c.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/35a16dbd-88ec-4802-aeaa-d82564238f2e_ec4193855307b7db516c8010d808410c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\35a16dbd-88ec-4802-aeaa-d82564238f2e_ec4193855307b7db516c8010d808410c.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\58b53eff-c4cf-48e8-847d-33e33e36e50b_[2G18] Đến Bao Giờ - Datmaniac ft Cá Hồi Hoang - Video Lyric.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/58b53eff-c4cf-48e8-847d-33e33e36e50b_[2G18] Đến Bao Giờ - Datmaniac ft Cá Hồi Hoang - Video Lyric.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\58b53eff-c4cf-48e8-847d-33e33e36e50b_[2G18] Đến Bao Giờ - Datmaniac ft Cá Hồi Hoang - Video Lyric.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\63139c4d-ab4b-40b6-855c-671bde2153b8_[ROCK VIỆT - TIGER] Tập 2 - Vòng Lập Đội - BRAINWAVE - MẤT LỐI.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/63139c4d-ab4b-40b6-855c-671bde2153b8_[ROCK VIỆT - TIGER] Tập 2 - Vòng Lập Đội - BRAINWAVE - MẤT LỐI.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\63139c4d-ab4b-40b6-855c-671bde2153b8_[ROCK VIỆT - TIGER] Tập 2 - Vòng Lập Đội - BRAINWAVE - MẤT LỐI.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\63b2b669-ce6f-4777-b3af-9a4b10f87f26_ec4193855307b7db516c8010d808410c.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/63b2b669-ce6f-4777-b3af-9a4b10f87f26_ec4193855307b7db516c8010d808410c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\63b2b669-ce6f-4777-b3af-9a4b10f87f26_ec4193855307b7db516c8010d808410c.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\6bcac7cf-9c77-4637-b186-b68f4ca6fca5_toeic-listening-1-2.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/6bcac7cf-9c77-4637-b186-b68f4ca6fca5_toeic-listening-1-2.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\6bcac7cf-9c77-4637-b186-b68f4ca6fca5_toeic-listening-1-2.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\6c430ce9-afca-41c7-9ed7-878945d6042a_[Vietsub + Kara] すずめ「Suzume」- Suzume No Tojimari OST (4-min ver).mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/6c430ce9-afca-41c7-9ed7-878945d6042a_[Vietsub + Kara] すずめ「Suzume」- Suzume No Tojimari OST (4-min ver).mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\6c430ce9-afca-41c7-9ed7-878945d6042a_[Vietsub + Kara] すずめ「Suzume」- Suzume No Tojimari OST (4-min ver).mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\78f1f57e-7939-4be8-b035-9c5ffaabab68_ddd86f98e4282d20ae2e2548274ff7d6.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/78f1f57e-7939-4be8-b035-9c5ffaabab68_ddd86f98e4282d20ae2e2548274ff7d6.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\78f1f57e-7939-4be8-b035-9c5ffaabab68_ddd86f98e4282d20ae2e2548274ff7d6.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\813b6106-8965-4cde-a415-c32021815565_ec4193855307b7db516c8010d808410c.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/813b6106-8965-4cde-a415-c32021815565_ec4193855307b7db516c8010d808410c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\813b6106-8965-4cde-a415-c32021815565_ec4193855307b7db516c8010d808410c.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\8d7a6c5b-259a-420d-ad1a-d3fa715a4865_[ROCK VIỆT - TIGER] TẬP 4 - Vòng Đối Đầu - BUMBLEBEE - CHỚM ĐÔNG.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/8d7a6c5b-259a-420d-ad1a-d3fa715a4865_[ROCK VIỆT - TIGER] TẬP 4 - Vòng Đối Đầu - BUMBLEBEE - CHỚM ĐÔNG.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\8d7a6c5b-259a-420d-ad1a-d3fa715a4865_[ROCK VIỆT - TIGER] TẬP 4 - Vòng Đối Đầu - BUMBLEBEE - CHỚM ĐÔNG.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\94d8bd08-3e82-41b6-8265-9d85ccebc141_[ROCK VIỆT - TIGER] Tập 3 - Vòng Lập Đội - METANOIA - LỐI.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/94d8bd08-3e82-41b6-8265-9d85ccebc141_[ROCK VIỆT - TIGER] Tập 3 - Vòng Lập Đội - METANOIA - LỐI.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\94d8bd08-3e82-41b6-8265-9d85ccebc141_[ROCK VIỆT - TIGER] Tập 3 - Vòng Lập Đội - METANOIA - LỐI.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\95b728af-2bd7-40bb-b7ca-cd2d0868adc6_[ROCK VIỆT - TIGER] Tập 3 - Vòng Lập Đội - METANOIA - LỐI.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/95b728af-2bd7-40bb-b7ca-cd2d0868adc6_[ROCK VIỆT - TIGER] Tập 3 - Vòng Lập Đội - METANOIA - LỐI.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\95b728af-2bd7-40bb-b7ca-cd2d0868adc6_[ROCK VIỆT - TIGER] Tập 3 - Vòng Lập Đội - METANOIA - LỐI.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\97c9d817-876f-44da-935b-d67218718155_toeic-listening-2-1.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/97c9d817-876f-44da-935b-d67218718155_toeic-listening-2-1.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\97c9d817-876f-44da-935b-d67218718155_toeic-listening-2-1.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\baccb8bb-33a7-4596-a182-9681981606b4_toeic-listening-1-2.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/baccb8bb-33a7-4596-a182-9681981606b4_toeic-listening-1-2.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\baccb8bb-33a7-4596-a182-9681981606b4_toeic-listening-1-2.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\c03427ab-e210-4ab3-98c8-ddfbee906c2d_ec4193855307b7db516c8010d808410c.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/c03427ab-e210-4ab3-98c8-ddfbee906c2d_ec4193855307b7db516c8010d808410c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\c03427ab-e210-4ab3-98c8-ddfbee906c2d_ec4193855307b7db516c8010d808410c.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\c309f7c3-549b-4f49-9c1a-ab9562e8ab59_ec4193855307b7db516c8010d808410c.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/c309f7c3-549b-4f49-9c1a-ab9562e8ab59_ec4193855307b7db516c8010d808410c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\c309f7c3-549b-4f49-9c1a-ab9562e8ab59_ec4193855307b7db516c8010d808410c.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\cfa0dbb1-95cd-4444-9dbc-be11bd59cfa1_ec4193855307b7db516c8010d808410c.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/cfa0dbb1-95cd-4444-9dbc-be11bd59cfa1_ec4193855307b7db516c8010d808410c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\cfa0dbb1-95cd-4444-9dbc-be11bd59cfa1_ec4193855307b7db516c8010d808410c.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\d121bbe7-b45a-4386-baa2-adecf5f786a3_ec4193855307b7db516c8010d808410c.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/d121bbe7-b45a-4386-baa2-adecf5f786a3_ec4193855307b7db516c8010d808410c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\d121bbe7-b45a-4386-baa2-adecf5f786a3_ec4193855307b7db516c8010d808410c.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\d85e1102-68e2-4ee8-9820-82408bfb509e_toeic-listening-1-1.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/d85e1102-68e2-4ee8-9820-82408bfb509e_toeic-listening-1-1.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\d85e1102-68e2-4ee8-9820-82408bfb509e_toeic-listening-1-1.mp3))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\e25f66a9-bac6-430e-bc45-b5c2f48affea_b775142ec574ed738005e2eec0f99ef2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/e25f66a9-bac6-430e-bc45-b5c2f48affea_b775142ec574ed738005e2eec0f99ef2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\e25f66a9-bac6-430e-bc45-b5c2f48affea_b775142ec574ed738005e2eec0f99ef2.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\e9841cfd-a44a-42ff-98b4-cc4b4fbaa28b_ec4193855307b7db516c8010d808410c.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/e9841cfd-a44a-42ff-98b4-cc4b4fbaa28b_ec4193855307b7db516c8010d808410c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\e9841cfd-a44a-42ff-98b4-cc4b4fbaa28b_ec4193855307b7db516c8010d808410c.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\efc17f28-bff0-42b8-b530-ef7ed494620a_toeic_boat.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/efc17f28-bff0-42b8-b530-ef7ed494620a_toeic_boat.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\efc17f28-bff0-42b8-b530-ef7ed494620a_toeic_boat.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\f0288746-ec09-46c3-be7d-ade5bda5b0c2_ddd86f98e4282d20ae2e2548274ff7d6.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/f0288746-ec09-46c3-be7d-ade5bda5b0c2_ddd86f98e4282d20ae2e2548274ff7d6.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\f0288746-ec09-46c3-be7d-ade5bda5b0c2_ddd86f98e4282d20ae2e2548274ff7d6.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\f4c74f94-ade3-460a-a448-623d52c220bb_ec4193855307b7db516c8010d808410c.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/f4c74f94-ade3-460a-a448-623d52c220bb_ec4193855307b7db516c8010d808410c.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\f4c74f94-ade3-460a-a448-623d52c220bb_ec4193855307b7db516c8010d808410c.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\ff7a7d54-a231-4680-9c68-71e60bdd3185_[vietsub + lyrics] Past lives - Sapientdream.mp3))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/ff7a7d54-a231-4680-9c68-71e60bdd3185_[vietsub + lyrics] Past lives - Sapientdream.mp3</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\ff7a7d54-a231-4680-9c68-71e60bdd3185_[vietsub + lyrics] Past lives - Sapientdream.mp3))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

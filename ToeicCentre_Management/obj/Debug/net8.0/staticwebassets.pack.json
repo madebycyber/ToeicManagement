@@ -1,280 +1,400 @@
 {
   "Files": [
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ToeicCentre_Management.bundle.scp.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ToeicCentre_Management.bundle.scp.css",
       "PackagePath": "staticwebassets\\ToeicCentre_Management.bundle.scp.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\css\\site.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\admin.css",
+      "PackagePath": "staticwebassets\\admin.css"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\admin.js",
+      "PackagePath": "staticwebassets\\admin.js"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\favicon.ico",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\frontend\\Logo_MTA_new.png",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\frontend\\Logo_MTA_new.png",
       "PackagePath": "staticwebassets\\frontend\\Logo_MTA_new.png"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\frontend\\lanh.jpg",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\frontend\\lanh.jpg",
       "PackagePath": "staticwebassets\\frontend\\lanh.jpg"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\frontend\\script.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\frontend\\script.js",
       "PackagePath": "staticwebassets\\frontend\\script.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\frontend\\slider_gp.png",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\frontend\\slider_gp.png",
       "PackagePath": "staticwebassets\\frontend\\slider_gp.png"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\frontend\\slider_hocvien.jpeg",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\frontend\\slider_hocvien.jpeg",
       "PackagePath": "staticwebassets\\frontend\\slider_hocvien.jpeg"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\frontend\\style.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\frontend\\style.css",
       "PackagePath": "staticwebassets\\frontend\\style.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\js\\site.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\script.js",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\script.js",
       "PackagePath": "staticwebassets\\script.js"
     },
     {
-      "Id": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\style.css",
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\style.css",
       "PackagePath": "staticwebassets\\style.css"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\toeic-listening-1-2.mp3",
+      "PackagePath": "staticwebassets\\toeic-listening-1-2.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\toeic-listening-2-1.mp3",
+      "PackagePath": "staticwebassets\\toeic-listening-2-1.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\1bce940d-6843-4944-aaa6-3537ea8f04ee_[AMV] THE GIFT - HIRAI DAI 平井 大 - OST Doraemon The Movie 2019.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\1bce940d-6843-4944-aaa6-3537ea8f04ee_[AMV] THE GIFT - HIRAI DAI 平井 大 - OST Doraemon The Movie 2019.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\2fef9554-9151-426e-92dc-bb6b88b98a1d_toeic_boat.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\2fef9554-9151-426e-92dc-bb6b88b98a1d_toeic_boat.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\35a16dbd-88ec-4802-aeaa-d82564238f2e_ec4193855307b7db516c8010d808410c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\35a16dbd-88ec-4802-aeaa-d82564238f2e_ec4193855307b7db516c8010d808410c.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\58b53eff-c4cf-48e8-847d-33e33e36e50b_[2G18] Đến Bao Giờ - Datmaniac ft Cá Hồi Hoang - Video Lyric.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\58b53eff-c4cf-48e8-847d-33e33e36e50b_[2G18] Đến Bao Giờ - Datmaniac ft Cá Hồi Hoang - Video Lyric.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\63139c4d-ab4b-40b6-855c-671bde2153b8_[ROCK VIỆT - TIGER] Tập 2 - Vòng Lập Đội - BRAINWAVE - MẤT LỐI.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\63139c4d-ab4b-40b6-855c-671bde2153b8_[ROCK VIỆT - TIGER] Tập 2 - Vòng Lập Đội - BRAINWAVE - MẤT LỐI.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\63b2b669-ce6f-4777-b3af-9a4b10f87f26_ec4193855307b7db516c8010d808410c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\63b2b669-ce6f-4777-b3af-9a4b10f87f26_ec4193855307b7db516c8010d808410c.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\6bcac7cf-9c77-4637-b186-b68f4ca6fca5_toeic-listening-1-2.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\6bcac7cf-9c77-4637-b186-b68f4ca6fca5_toeic-listening-1-2.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\6c430ce9-afca-41c7-9ed7-878945d6042a_[Vietsub + Kara] すずめ「Suzume」- Suzume No Tojimari OST (4-min ver).mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\6c430ce9-afca-41c7-9ed7-878945d6042a_[Vietsub + Kara] すずめ「Suzume」- Suzume No Tojimari OST (4-min ver).mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\78f1f57e-7939-4be8-b035-9c5ffaabab68_ddd86f98e4282d20ae2e2548274ff7d6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\78f1f57e-7939-4be8-b035-9c5ffaabab68_ddd86f98e4282d20ae2e2548274ff7d6.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\813b6106-8965-4cde-a415-c32021815565_ec4193855307b7db516c8010d808410c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\813b6106-8965-4cde-a415-c32021815565_ec4193855307b7db516c8010d808410c.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\8d7a6c5b-259a-420d-ad1a-d3fa715a4865_[ROCK VIỆT - TIGER] TẬP 4 - Vòng Đối Đầu - BUMBLEBEE - CHỚM ĐÔNG.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\8d7a6c5b-259a-420d-ad1a-d3fa715a4865_[ROCK VIỆT - TIGER] TẬP 4 - Vòng Đối Đầu - BUMBLEBEE - CHỚM ĐÔNG.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\94d8bd08-3e82-41b6-8265-9d85ccebc141_[ROCK VIỆT - TIGER] Tập 3 - Vòng Lập Đội - METANOIA - LỐI.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\94d8bd08-3e82-41b6-8265-9d85ccebc141_[ROCK VIỆT - TIGER] Tập 3 - Vòng Lập Đội - METANOIA - LỐI.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\95b728af-2bd7-40bb-b7ca-cd2d0868adc6_[ROCK VIỆT - TIGER] Tập 3 - Vòng Lập Đội - METANOIA - LỐI.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\95b728af-2bd7-40bb-b7ca-cd2d0868adc6_[ROCK VIỆT - TIGER] Tập 3 - Vòng Lập Đội - METANOIA - LỐI.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\97c9d817-876f-44da-935b-d67218718155_toeic-listening-2-1.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\97c9d817-876f-44da-935b-d67218718155_toeic-listening-2-1.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\baccb8bb-33a7-4596-a182-9681981606b4_toeic-listening-1-2.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\baccb8bb-33a7-4596-a182-9681981606b4_toeic-listening-1-2.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\c03427ab-e210-4ab3-98c8-ddfbee906c2d_ec4193855307b7db516c8010d808410c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\c03427ab-e210-4ab3-98c8-ddfbee906c2d_ec4193855307b7db516c8010d808410c.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\c309f7c3-549b-4f49-9c1a-ab9562e8ab59_ec4193855307b7db516c8010d808410c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\c309f7c3-549b-4f49-9c1a-ab9562e8ab59_ec4193855307b7db516c8010d808410c.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\cfa0dbb1-95cd-4444-9dbc-be11bd59cfa1_ec4193855307b7db516c8010d808410c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\cfa0dbb1-95cd-4444-9dbc-be11bd59cfa1_ec4193855307b7db516c8010d808410c.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\d121bbe7-b45a-4386-baa2-adecf5f786a3_ec4193855307b7db516c8010d808410c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\d121bbe7-b45a-4386-baa2-adecf5f786a3_ec4193855307b7db516c8010d808410c.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\d85e1102-68e2-4ee8-9820-82408bfb509e_toeic-listening-1-1.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\d85e1102-68e2-4ee8-9820-82408bfb509e_toeic-listening-1-1.mp3"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\e25f66a9-bac6-430e-bc45-b5c2f48affea_b775142ec574ed738005e2eec0f99ef2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\e25f66a9-bac6-430e-bc45-b5c2f48affea_b775142ec574ed738005e2eec0f99ef2.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\e9841cfd-a44a-42ff-98b4-cc4b4fbaa28b_ec4193855307b7db516c8010d808410c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\e9841cfd-a44a-42ff-98b4-cc4b4fbaa28b_ec4193855307b7db516c8010d808410c.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\efc17f28-bff0-42b8-b530-ef7ed494620a_toeic_boat.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\efc17f28-bff0-42b8-b530-ef7ed494620a_toeic_boat.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\f0288746-ec09-46c3-be7d-ade5bda5b0c2_ddd86f98e4282d20ae2e2548274ff7d6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\f0288746-ec09-46c3-be7d-ade5bda5b0c2_ddd86f98e4282d20ae2e2548274ff7d6.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\f4c74f94-ade3-460a-a448-623d52c220bb_ec4193855307b7db516c8010d808410c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\questions\\f4c74f94-ade3-460a-a448-623d52c220bb_ec4193855307b7db516c8010d808410c.jpg"
+    },
+    {
+      "Id": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\ff7a7d54-a231-4680-9c68-71e60bdd3185_[vietsub + lyrics] Past lives - Sapientdream.mp3",
+      "PackagePath": "staticwebassets\\uploads\\questions\\ff7a7d54-a231-4680-9c68-71e60bdd3185_[vietsub + lyrics] Past lives - Sapientdream.mp3"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ToeicCentre_Management.Microsoft.AspNetCore.StaticWebAssets.props",

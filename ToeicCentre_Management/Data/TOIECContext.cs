@@ -137,7 +137,7 @@ public partial class TOIECContext : DbContext
 
         modelBuilder.Entity<Cauhoi>(entity =>
         {
-            entity.Property(e => e.MaCh).ValueGeneratedNever();
+            entity.Property(e => e.MaCh).ValueGeneratedOnAdd();
 
             entity.HasOne(d => d.IdGiaoVienTaoChNavigation).WithMany(p => p.Cauhois).HasConstraintName("FK_CAUHOI_GIAOVIEN");
 
@@ -226,7 +226,7 @@ public partial class TOIECContext : DbContext
 
         modelBuilder.Entity<Dapan>(entity =>
         {
-            entity.Property(e => e.MaDa).ValueGeneratedNever();
+            entity.Property(e => e.MaDa).ValueGeneratedOnAdd(); // Cho phép tự động tăng
             entity.Property(e => e.KyHieuDa).IsFixedLength();
 
             entity.HasOne(d => d.MaChNavigation).WithMany(p => p.Dapans).HasConstraintName("FK_DAPAN_CAUHOI");

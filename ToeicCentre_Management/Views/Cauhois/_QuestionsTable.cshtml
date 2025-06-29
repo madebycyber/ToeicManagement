@@ -1,0 +1,71 @@
+﻿@model ToeicCentre_Management.ViewModels.QuestionBankViewModel
+@{
+    int stt = 1;
+}
+@if (Model.Questions.Any())
+{
+    @foreach (var item in Model.Questions)
+    {
+        <tr data-question-id="@item.MaCh">
+            <td><input type="checkbox" class="row-select"></td>
+            <td>@(stt++)</td>
+            <td title="@item.NdCauHoi">
+                @if (item.NdCauHoi != null && item.NdCauHoi.Length > 50)
+                {
+                    @item.NdCauHoi.Substring(0, 50)
+
+                    <text>...</text>
+                }
+                else
+                {
+                    @item.NdCauHoi
+                }
+            </td>
+            <td>@(item.Phanloaiches.FirstOrDefault()?.MaPtNavigation?.TenPt ?? "N/A")</td>
+            <td>@(item.Phanloaiches.FirstOrDefault()?.MaKnNavigation?.TenKn ?? "N/A")</td>
+            <td>@(item.Phanloaiches.FirstOrDefault()?.MaMdkNavigation?.TenMdk ?? "N/A")</td>
+            <td>
+                @{
+                    var statusClass = "status-pending";
+                    switch (item.MaTtChNavigation?.TenTtCh)
+                    {
+                        case "Đã duyệt": statusClass = "status-approved"; break;
+                        case "Từ chối": statusClass = "status-rejected"; break;
+                        case "Cần chỉnh sửa": statusClass = "status-revision"; break;
+                    }
+                }
+                <span class="badge @statusClass">@(item.MaTtChNavigation?.TenTtCh ?? "N/A")</span>
+            </td>
+            <td><span>@(item.IdGiaoVienTaoChNavigation?.TenGiaoVien ?? "N/A")</span></td>
+            <td class="actions">
+                <button type="button" class="btn-action action-view" title="Xem chi tiết" onclick="showDetailModal(@item.MaCh)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16"><path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" /><path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" /></svg>
+                </button>
+                <button type="button" class="btn-action action-edit" title="Sửa" onclick="showEditModal(@item.MaCh)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16"><path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z" /></svg>
+                </button>
+                <button type="button" class="btn-action action-delete" title="Xóa" onclick="showDeleteConfirmModal(@item.MaCh)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16"><path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0" /></svg>
+                </button>
+                @if (item.MaTtChNavigation?.TenTtCh == "Chờ duyệt")
+                {
+                    <button type="button" class="btn-action action-review" title="Duyệt/Xem xét" onclick="showApprovalModal(@item.MaCh)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247m2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z" /></svg>
+                    </button>
+                }
+                @if (item.MaTtChNavigation?.TenTtCh == "Đã duyệt")
+                {
+                    <button type="button" class="btn-action action-classify" title="Phân loại" onclick="showClassifyModal(@item.MaCh)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tags-fill" viewBox="0 0 16 16"><path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm4.5 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3" /><path d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z" /></svg>
+                    </button>
+                }
+            </td>
+        </tr>
+    }
+}
+else
+{
+    <tr>
+        <td colspan="9" class="text-center" style="padding: 20px;">Không tìm thấy câu hỏi nào phù hợp.</td>
+    </tr>
+}

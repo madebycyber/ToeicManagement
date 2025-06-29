@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tx1kLPo+tBiwLkGODjMZXZOf0LbpeAIkNP+dl7APDtnervwHGojXZNYkmj9lC1iysErLSqqFTASg3l4wBf8Pxg==",
+  "dgSpecHash": "632LuVLLYov3pZ9y1Muo2bEoKF78GYfTRbov4Qs93oPfcNUwookabAK7P87Hyz8E/eE8XeZAz6j1Z7qrDSlyew==",
   "success": true,
-  "projectFilePath": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\ToeicCentre_Management.csproj",
+  "projectFilePath": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\ToeicCentre_Management.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ACER USER\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ACER USER\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

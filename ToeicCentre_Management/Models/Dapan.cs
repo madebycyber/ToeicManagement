@@ -11,7 +11,7 @@ public partial class Dapan
 {
     [Key]
     [Column("MaDA")]
-    public int MaDa { get; set; }
+    public int? MaDa { get; set; }
 
     [Column("MaCH")]
     public int? MaCh { get; set; }

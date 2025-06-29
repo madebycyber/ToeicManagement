@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @* Dòng này sẽ đặt tiêu đề cho từng trang con *@
+    <title>@ViewData["Title"] - Admin TOEIC</title>
+
+    @* Link đến file CSS chúng ta vừa tạo *@
+    <link rel="stylesheet" href="~/admin.css">
+</head>
+<body>
+
+    <div class="dashboard">
+        <!-- ==================== SIDEBAR ==================== -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <a asp-controller="Home" asp-action="Index" class="sidebar-logo">Admin</a>
+                <button class="sidebar-close-mobile" id="sidebar-close-mobile">×</button>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        @* Sử dụng Tag Helper để tạo link an toàn *@
+                        <a asp-controller="Dashboard" asp-action="Index">
+                            <span class="nav-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16"><path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.547l3.434-3.434a.39.39 0 0 0-.029-.518z" /><path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.95 7.95 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.86c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" /></svg> </span>
+                            <span class="nav-text">Bảng điều khiển</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a asp-controller="QuestionBank" asp-action="Index">
+                            <span class="nav-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16"><path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485-.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h1V6zm2 0v7h1V6zm2 0v7h1V6zm2 0v7h1V6zm2 0v7h1V6zM1 13h14V6H1zm14 1.659-.5-2H1.5l-.5 2z" /></svg> </span>
+                            <span class="nav-text">Ngân hàng câu hỏi</span>
+                        </a>
+                    </li>
+                    @* Các mục menu khác *@
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <button class="sidebar-toggle" id="sidebar-toggle" title="Thu gọn/Mở rộng sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" /></svg>
+                </button>
+            </div>
+        </aside>
+
+        <!-- ==================== MAIN CONTENT ==================== -->
+        <main class="main-content" id="main-content">
+            <button class="sidebar-open-mobile" id="sidebar-open-mobile">☰</button>
+
+            @* Đây là nơi nội dung của các trang con sẽ được chèn vào *@
+            @RenderBody()
+
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="~/admin.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

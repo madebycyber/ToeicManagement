@@ -7601,11 +7601,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\ToeicCentre_Management.csproj",
+      "projectUniqueName": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\ToeicCentre_Management.csproj",
       "projectName": "ToeicCentre_Management",
-      "projectPath": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\ToeicCentre_Management.csproj",
+      "projectPath": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\ToeicCentre_Management.csproj",
       "packagesPath": "C:\\Users\\ACER USER\\.nuget\\packages\\",
-      "outputPath": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\obj\\",
+      "outputPath": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
