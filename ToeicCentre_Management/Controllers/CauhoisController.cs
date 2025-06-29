@@ -212,6 +212,69 @@ namespace ToeicCentre_Management.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // POST: QuestionBank/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            try
+            {
+                var cauhoi = await _context.Cauhois
+                    .Include(c => c.Dapans) // Bao gồm các Dapan liên quan
+                    .Include(c => c.Phanloaiches) // Bao gồm các Phanloaich liên quan
+                    .FirstOrDefaultAsync(c => c.MaCh == id);
+
+                if (cauhoi == null)
+                {
+                    return NotFound();
+                }
+
+                // Xóa các tệp tin (nếu có)
+                if (!string.IsNullOrEmpty(cauhoi.PathHinhAnh))
+                {
+                    var imagePath = Path.Combine(_webHostEnvironment.WebRootPath, cauhoi.PathHinhAnh.TrimStart('/'));
+                    if (System.IO.File.Exists(imagePath))
+                    {
+                        System.IO.File.Delete(imagePath);
+                    }
+                }
+                if (!string.IsNullOrEmpty(cauhoi.PathAudioRieng))
+                {
+                    var audioPath = Path.Combine(_webHostEnvironment.WebRootPath, cauhoi.PathAudioRieng.TrimStart('/'));
+                    if (System.IO.File.Exists(audioPath))
+                    {
+                        System.IO.File.Delete(audioPath);
+                    }
+                }
+
+                // Xóa các bản ghi Phanloaich liên quan
+                if (cauhoi.Phanloaiches.Any())
+                {
+                    _context.Phanloaiches.RemoveRange(cauhoi.Phanloaiches);
+                }
+
+                // Xóa các bản ghi Dapan liên quan
+                if (cauhoi.Dapans.Any())
+                {
+                    _context.Dapans.RemoveRange(cauhoi.Dapans);
+                }
+
+                // Xóa Cauhoi
+                _context.Cauhois.Remove(cauhoi);
+
+                // Lưu tất cả thay đổi cùng lúc
+                await _context.SaveChangesAsync();
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                // Log lỗi (bạn có thể tích hợp logging như Serilog hoặc ILogger)
+                Console.WriteLine($"Error deleting question: {ex.Message}");
+                return View("Error", new { message = "An error occurred while deleting the question. Please try again." });
+            }
+        }
+
         private async Task<string> SaveFile(IFormFile file)
         {
             var originalFileName = Path.GetFileName(file.FileName);

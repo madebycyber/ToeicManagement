@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ToeicCentre_Management")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c83d67f550607fd509bce20fc4578f5b7cf732c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a54d432b0bfb42a74c92e98b9d184adb133d61dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToeicCentre_Management")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToeicCentre_Management")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
