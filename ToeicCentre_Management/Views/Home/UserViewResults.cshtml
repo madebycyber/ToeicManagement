@@ -1,0 +1,171 @@
+﻿@{
+    ViewData["Title"] = "Xem kết quả thi TOEIC";
+    Layout = "_UserLayout";
+}
+
+<main class="student-main-content">
+    <div class="container main-content-body">
+        <!-- RESULTS SECTION -->
+        <section id="results-section" class="filters-and-search-student card-ui-v2">
+            <h2>Kết quả thi TOEIC</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ngày làm bài</th>
+                            <th>Loại đề</th>
+                            <th>Điểm số</th>
+                            <th>Thời gian</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="results-table">
+                        <!-- Populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- DETAILED RESULTS SECTION -->
+        <section id="detailed-results-section" class="filters-and-search-student card-ui-v2 hidden">
+            <h2>Chi tiết kết quả</h2>
+            <div id="detailed-results-content">
+                <!-- Populated dynamically -->
+            </div>
+            <div class="form-actions">
+                <button type="button" id="request-regrade-btn" class="btn btn-primary-v2">Yêu cầu phúc khảo</button>
+                <button type="button" id="back-btn" class="btn btn-secondary-v2">Quay lại</button>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const resultsTable = document.getElementById('results-table');
+        const detailedResultsSection = document.getElementById('detailed-results-section');
+        const detailedResultsContent = document.getElementById('detailed-results-content');
+        const requestRegradeBtn = document.getElementById('request-regrade-btn');
+        const backBtn = document.getElementById('back-btn');
+
+        let testResults = []; // Store student results
+
+        // Sample question bank and results (for demo)
+        const questionBank = {
+            listening: [
+                { id: 'QL001', content: 'Where is he going?', options: ['To the office', 'Home', 'School', 'Market'], correctAnswer: 'a', file: '/audio/Cau1.mp3' },
+                { id: 'QL005', content: 'What will the man do next?', options: ['Call a taxi', 'Take a break', 'Email the report', 'Visit the client'], correctAnswer: 'd', file: '/audio/Cau5.mp3' }
+            ],
+            reading: [
+                { id: 'QR015', content: 'The new manager is very ___', options: ['efficiency', 'efficiently', 'efficient', 'efficiencying'], correctAnswer: 'c', file: '/docs/Cau15.docx' },
+                { id: 'QR029', content: 'The theme of the paragraph is?', options: ['Traffic Jam', 'Advertising', 'Celebrity', 'Education'], correctAnswer: 'd', file: '/docs/Cau29.docx' }
+            ],
+            essay: { id: 'QE001', content: 'Write a short essay about your study plan.' }
+        };
+
+        // Initialize with sample results
+        testResults = [
+            {
+                id: 'RES001',
+                date: '29/05/2025 03:43 PM',
+                type: 'Custom',
+                score: 780,
+                time: '20 phút',
+                answers: { q1: 'b', q2: 'c', q3: 'a', q4: 'b' },
+                essay: 'My study plan is to practice TOEIC daily.',
+                essayScore: 85,
+                status: 'Đã chấm',
+                regradeRequested: false
+            }
+        ];
+
+        // Populate results table
+        function updateResultsTable() {
+            resultsTable.innerHTML = '';
+            testResults.forEach((result, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                        <td>${result.date}</td>
+                        <td>${result.type}</td>
+                        <td>${result.score}/990</td>
+                        <td>${result.time}</td>
+                        <td>
+                            <button class="btn btn-primary-v2 btn-sm" onclick="viewDetails(${index})">Xem chi tiết</button>
+                        </td>
+                    `;
+                resultsTable.appendChild(row);
+            });
+        }
+
+        updateResultsTable();
+
+        // View detailed results
+        window.viewDetails = (index) => {
+            const result = testResults[index];
+            detailedResultsContent.innerHTML = `
+                    <h3>Kết quả bài thi: ${result.date}</h3>
+                    <p><strong>Điểm số:</strong> ${result.score}/990</p>
+                    <p><strong>Thời gian:</strong> ${result.time}</p>
+                    <h4>Chi tiết đáp án:</h4>
+                `;
+
+            let questionIndex = 1;
+            [...questionBank.listening, ...questionBank.reading].forEach((q, idx) => {
+                const userAnswer = result.answers[`q${idx + 1}`] || '';
+                const isCorrect = userAnswer === q.correctAnswer;
+                detailedResultsContent.innerHTML += `
+                        <div class="question-review">
+                            <p><strong>Câu ${questionIndex}:</strong> ${q.content}</p>
+                            <p>Đáp án của bạn: ${userAnswer.toUpperCase()} | Đáp án đúng: ${q.correctAnswer.toUpperCase()}</p>
+                            <p style="color: ${isCorrect ? 'green' : 'red'}">${isCorrect ? 'Đúng' : 'Sai'}</p>
+                        </div>
+                    `;
+                questionIndex++;
+            });
+
+            detailedResultsContent.innerHTML += `
+                    <div class="question-review">
+                        <p><strong>Câu ${questionIndex}:</strong> ${questionBank.essay.content}</p>
+                        <p>Đáp án của bạn: ${result.essay}</p>
+                        <p>Điểm tự luận: ${result.essayScore}/100</p>
+                    </div>
+                `;
+
+            requestRegradeBtn.disabled = result.regradeRequested;
+            detailedResultsSection.classList.remove('hidden');
+        };
+
+        // Request re-grading
+        requestRegradeBtn.addEventListener('click', () => {
+            const result = testResults.find(r => r.status === 'Đã chấm' && !r.regradeRequested);
+            if (result) {
+                result.regradeRequested = true;
+                alert('Yêu cầu phúc khảo đã được gửi đến quản trị viên.');
+                requestRegradeBtn.disabled = true;
+            } else {
+                alert('Không thể yêu cầu phúc khảo lúc này.');
+            }
+        });
+
+        // Back to results
+        backBtn.addEventListener('click', () => {
+            detailedResultsSection.classList.add('hidden');
+        });
+    });
+</script>
+
+<style>
+    .question-review {
+        margin: 10px 0;
+        border-bottom: 1px solid var(--border-color-student);
+        padding-bottom: 10px;
+    }
+
+    .form-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+</style>

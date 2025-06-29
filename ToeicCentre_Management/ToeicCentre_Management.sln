@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToeicCentre_Management", "ToeicCentre_Management.csproj", "{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6614B056-6285-488B-B307-E47143A1ED50}
+	EndGlobalSection
+EndGlobal

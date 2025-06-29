@@ -1,0 +1,207 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ToeicCentre_Management
+build_property.RootNamespace = ToeicCentre_Management
+build_property.ProjectDir = E:\Tai lieu hoc tap\Kì 2 năm 4\TT CNTT\Visual Project\QuanLyToeic\ToeicCentre_Management\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Tai lieu hoc tap\Kì 2 năm 4\TT CNTT\Visual Project\QuanLyToeic\ToeicCentre_Management
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhoibaitaps/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pYmFpdGFwc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhoibaitaps/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pYmFpdGFwc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhoibaitaps/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pYmFpdGFwc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhoibaitaps/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pYmFpdGFwc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhoibaitaps/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pYmFpdGFwc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhois/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhois/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhois/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhois/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhois/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Cauhois/QuestionForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F1aG9pc1xRdWVzdGlvbkZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Dangkyonluyens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5b25sdXllbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Dangkyonluyens/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5b25sdXllbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Dangkyonluyens/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5b25sdXllbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Dangkyonluyens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5b25sdXllbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Dangkyonluyens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5b25sdXllbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Dangkythithus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5dGhpdGh1c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Dangkythithus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5dGhpdGh1c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Dangkythithus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5dGhpdGh1c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Dangkythithus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5dGhpdGh1c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Dangkythithus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5dGhpdGh1c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Home/GradeToeicTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHcmFkZVRvZWljVGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Home/ToeicMockTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb2VpY01vY2tUZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Home/TOEICPractice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUT0VJQ1ByYWN0aWNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Home/UserToeicMockTest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyVG9laWNNb2NrVGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Home/UserToeicPractice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyVG9laWNQcmFjdGljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Home/UserViewResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyVmlld1Jlc3VsdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Phieubaitaponluyens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXViYWl0YXBvbmx1eWVuc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Phieubaitaponluyens/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXViYWl0YXBvbmx1eWVuc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Phieubaitaponluyens/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXViYWl0YXBvbmx1eWVuc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Phieubaitaponluyens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXViYWl0YXBvbmx1eWVuc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Phieubaitaponluyens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhpZXViYWl0YXBvbmx1eWVuc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Sinhviens/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaHZpZW5zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Sinhviens/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaHZpZW5zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Sinhviens/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaHZpZW5zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Sinhviens/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaHZpZW5zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Sinhviens/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2luaHZpZW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Tai lieu hoc tap/Kì 2 năm 4/TT CNTT/Visual Project/QuanLyToeic/ToeicCentre_Management/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-mo7nuexgkw

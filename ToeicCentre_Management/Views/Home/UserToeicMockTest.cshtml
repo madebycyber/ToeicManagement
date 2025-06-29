@@ -1,0 +1,653 @@
+﻿@{
+    ViewData["Title"] = "Thi thử TOEIC";
+    Layout = "_UserLayout";
+}
+
+<main class="student-main-content">
+    <div class="container main-content-body">
+        <!-- HERO SLIDER SECTION -->
+        <section class="hero-slider-section">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1280&q=80&blur=5')">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h1>Thi thử TOEIC</h1>
+                            <p>Luyện tập với đề thi thử TOEIC để nâng cao kỹ năng và chuẩn bị tốt nhất.</p>
+                            <a href="#mock-test-section" class="btn btn-primary-v2 btn-slide">Bắt đầu ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination hero-swiper-pagination"></div>
+                <div class="swiper-button-prev hero-swiper-button-prev"></div>
+                <div class="swiper-button-next hero-swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- MOCK TEST SECTION -->
+        <section id="mock-test-section" class="filters-and-search-student card-ui-v2">
+            <h2>Đăng ký thi thử TOEIC</h2>
+            <form id="mock-test-register-form">
+                <div class="filter-controls-student-v2">
+                    <!-- New Registration Fields -->
+                    <div class="filter-group-student">
+                        <label for="full-name">Họ và tên: *</label>
+                        <input type="text" id="full-name" name="fullName" required placeholder="Nhập họ và tên">
+                    </div>
+                    <div class="filter-group-student">
+                        <label for="email">Email: *</label>
+                        <input type="email" id="email" name="email" required placeholder="Nhập email">
+                    </div>
+                    <div class="filter-group-student">
+                        <label for="phone">Số điện thoại: *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại">
+                    </div>
+                    <!-- End of New Registration Fields -->
+
+                    <div class="filter-group-student">
+                        <label for="test-type">Loại đề thi: *</label>
+                        <select id="test-type" name="testType" required>
+                            <option value="">-- Chọn loại đề --</option>
+                            <option value="premade">Đề có sẵn</option>
+                            <option value="custom">Tự tạo đề</option>
+                        </select>
+                    </div>
+                    <div class="filter-group-student">
+                        <label for="premade-test">Chọn đề có sẵn:</label>
+                        <select id="premade-test" name="premadeTest" disabled>
+                            <option value="">-- Chọn đề --</option>
+                            <option value="test1">Đề thi thử 1 (Đã duyệt)</option>
+                            <option value="test2">Đề thi thử 2 (Đã duyệt)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary-v2"><i class="fas fa-check"></i> Đăng ký</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- TEST TAKING SECTION -->
+        <section id="test-taking-section" class="filters-and-search-student card-ui-v2 hidden">
+            <h2>Làm bài thi thử TOEIC</h2>
+            <form id="mock-test-form">
+                <div id="test-questions">
+                    <!-- Questions will be dynamically populated -->
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="save-draft-btn" class="btn btn-secondary-v2">Lưu nháp</button>
+                    <button type="submit" class="btn btn-primary-v2">Nộp bài</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- TEST HISTORY SECTION -->
+        <section id="test-history-section" class="filters-and-search-student card-ui-v2 hidden">
+            <h2>Lịch sử bài thi</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ngày làm bài</th>
+                            <th>Họ và tên</th>
+                            <th>Email</th>
+                            <th>Số điện thoại</th>
+                            <th>Loại đề</th>
+                            <th>Điểm số</th>
+                            <th>Thời gian</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="test-history-table">
+                        <!-- Populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- REVIEW TEST SECTION -->
+        <section id="review-test-section" class="filters-and-search-student card-ui-v2 hidden">
+            <h2>Xem lại bài làm</h2>
+            <div id="review-test-content">
+                <!-- Populated dynamically -->
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- Custom Test Creation Modal -->
+<div class="modal hidden" id="custom-test-modal" role="dialog" aria-labelledby="custom-test-modal-title">
+    <div class="modal-header">
+        <h2 id="custom-test-modal-title">Tự tạo đề thi thử TOEIC</h2>
+        <button class="close-button" id="close-custom-test-modal" aria-label="Đóng">×</button>
+    </div>
+    <div class="modal-body">
+        <form id="custom-test-form">
+            <div class="filter-group-student">
+                <label for="num-listening">Số câu Listening: *</label>
+                <input type="number" id="num-listening" name="numListening" min="1" max="100" required value="5">
+            </div>
+            <div class="filter-group-student">
+                <label for="num-reading">Số câu Reading: *</label>
+                <input type="number" id="num-reading" name="numReading" min="1" max="100" required value="5">
+            </div>
+            <div id="question-selection" class="hidden">
+                <h3>Chọn câu hỏi từ ngân hàng</h3>
+                <div id="listening-questions">
+                    <h4>Listening Questions</h4>
+                    <!-- Populated dynamically -->
+                </div>
+                <div id="reading-questions">
+                    <h4>Reading Questions</h4>
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary-v2" id="cancel-custom-test">Hủy</button>
+        <button type="button" id="load-questions-btn" class="btn btn-primary-v2">Tải câu hỏi</button>
+        <button type="submit" form="custom-test-form" class="btn btn-primary-v2 hidden" id="create-test-btn">Tạo đề</button>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const mockTestRegisterForm = document.getElementById('mock-test-register-form');
+        const testTypeSelect = document.getElementById('test-type');
+        const premadeTestSelect = document.getElementById('premade-test');
+        const testTakingSection = document.getElementById('test-taking-section');
+        const testHistorySection = document.getElementById('test-history-section');
+        const reviewTestSection = document.getElementById('review-test-section');
+        const mockTestSection = document.getElementById('mock-test-section');
+        const customTestModal = document.getElementById('custom-test-modal');
+        const closeCustomTestModalBtn = document.getElementById('close-custom-test-modal');
+        const cancelCustomTestBtn = document.getElementById('cancel-custom-test');
+        const modalOverlay = document.getElementById('student-modal-overlay');
+        const customTestForm = document.getElementById('custom-test-form');
+        const mockTestForm = document.getElementById('mock-test-form');
+        const saveDraftBtn = document.getElementById('save-draft-btn');
+        const loadQuestionsBtn = document.getElementById('load-questions-btn');
+        const createTestBtn = document.getElementById('create-test-btn');
+        const questionSelection = document.getElementById('question-selection');
+        const fullNameInput = document.getElementById('full-name');
+        const emailInput = document.getElementById('email');
+        const phoneInput = document.getElementById('phone');
+
+        let testHistory = [];
+        let selectedQuestions = [];
+
+        // Question Bank (based on provided sample)
+        const questionBank = {
+            listening: [
+                {
+                    id: 'QL001',
+                    skill: 'Listening – Part 2',
+                    type: 'Câu hỏi hình ảnh (Audio)',
+                    content: 'Where is he going?',
+                    options: ['To the office', 'Home', 'School', 'Market'],
+                    correctAnswer: 'a',
+                    file: '/audio/Cau1.mp3'
+                },
+                {
+                    id: 'QL005',
+                    skill: 'Listening – Part 3',
+                    type: 'Đối thoại ngắn',
+                    content: 'What will the man do next?',
+                    options: ['Call a taxi', 'Take a break', 'Email the report', 'Visit the client'],
+                    correctAnswer: 'd',
+                    file: '/audio/Cau5.mp3'
+                }
+            ],
+            reading: [
+                {
+                    id: 'QR015',
+                    skill: 'Reading – Part 5',
+                    type: 'Từ loại',
+                    content: 'The new manager is very ___.',
+                    options: ['efficiency', 'efficiently', 'efficient', 'efficiencying'],
+                    correctAnswer: 'c',
+                    file: '/docs/Cau15.docx'
+                },
+                {
+                    id: 'QR029',
+                    skill: 'Reading – Part 7',
+                    type: 'Đọc văn bản và trả lời',
+                    content: 'The theme of the paragraph is?',
+                    options: ['Traffic Jam', 'Advertising', 'Celebrity', 'Education'],
+                    correctAnswer: 'd',
+                    file: '/docs/Cau29.docx'
+                },
+                {
+                    id: 'QR017',
+                    skill: 'Reading – Part 5',
+                    type: 'Động từ chia thì',
+                    content: 'Mr. Tanaka ______ to the conference every year since 2019.',
+                    options: ['attended', 'has attended', 'attends', 'attending'],
+                    correctAnswer: 'b',
+                    file: null
+                },
+                {
+                    id: 'QR021',
+                    skill: 'Reading – Part 6',
+                    type: 'Điền từ vào đoạn văn',
+                    content: 'We have received your payment and will process your order ____.',
+                    options: ['immediately', 'immediate', 'immediacy', 'immediateness'],
+                    correctAnswer: 'a',
+                    file: null
+                },
+                {
+                    id: 'QR034',
+                    skill: 'Reading – Part 7',
+                    type: 'Đọc hiểu đoạn văn (email)',
+                    content: 'According to the email, what time is the meeting?',
+                    options: ['9 a.m.', '10 a.m.', '11 a.m.', '2 p.m.'],
+                    correctAnswer: 'c',
+                    file: '/docs/Cau34.docx'
+                },
+                {
+                    id: 'QR042',
+                    skill: 'Reading – Part 5',
+                    type: 'Từ loại',
+                    content: 'The CEO emphasized the importance of customer ____.',
+                    options: ['satisfy', 'satisfied', 'satisfaction', 'satisfying'],
+                    correctAnswer: 'c',
+                    file: null
+                }
+            ]
+        };
+
+        // Handle test type selection
+        testTypeSelect.addEventListener('change', () => {
+            premadeTestSelect.disabled = testTypeSelect.value !== 'premade';
+        });
+
+        // Register for mock test
+        mockTestRegisterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const testType = testTypeSelect.value;
+            const fullName = fullNameInput.value.trim();
+            const email = emailInput.value.trim();
+            const phone = phoneInput.value.trim();
+
+            // Validate registration fields
+            if (!fullName || !email || !phone) {
+                alert('Vui lòng điền đầy đủ thông tin họ và tên, email, và số điện thoại!');
+                return;
+            }
+           
+           
+            if (testType === 'premade' && !premadeTestSelect.value) {
+                alert('Vui lòng chọn một đề có sẵn!');
+                return;
+            }
+
+            if (testType === 'custom') {
+                modalOverlay.classList.remove('hidden');
+                customTestModal.classList.remove('hidden');
+                document.getElementById('num-listening').focus();
+            } else {
+                // Load premade test (using sample questions for demo)
+                selectedQuestions = [...questionBank.listening, ...questionBank.reading];
+                loadTestQuestions(fullName, email, phone);
+                mockTestSection.classList.add('hidden');
+                testTakingSection.classList.remove('hidden');
+            }
+        });
+
+        // Close custom test modal
+        const closeCustomTestModal = () => {
+            modalOverlay.classList.add('hidden');
+            customTestModal.classList.add('hidden');
+            questionSelection.classList.add('hidden');
+            createTestBtn.classList.add('hidden');
+            loadQuestionsBtn.classList.remove('hidden');
+            selectedQuestions = [];
+        };
+
+        closeCustomTestModalBtn.addEventListener('click', closeCustomTestModal);
+        cancelCustomTestBtn.addEventListener('click', closeCustomTestModal);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !customTestModal.classList.contains('hidden')) {
+                closeCustomTestModal();
+            }
+        });
+
+        // Load questions for selection
+        loadQuestionsBtn.addEventListener('click', () => {
+            const numListening = parseInt(document.getElementById('num-listening').value);
+            const numReading = parseInt(document.getElementById('num-reading').value);
+
+            if (!numListening || !numReading || numListening < 1 || numReading < 1) {
+                alert('Vui lòng nhập số câu hợp lệ!');
+                return;
+            }
+
+            if (numListening > questionBank.listening.length || numReading > questionBank.reading.length) {
+                alert('Không đủ câu hỏi trong ngân hàng! Hiện có: ' + questionBank.listening.length + ' câu Listening và ' + questionBank.reading.length + ' câu Reading.');
+                return;
+            }
+
+            // Populate listening questions
+            const listeningContainer = document.getElementById('listening-questions');
+            listeningContainer.innerHTML = '<h4>Listening Questions (Chọn ' + numListening + ' câu)</h4>';
+            questionBank.listening.forEach((q, index) => {
+                listeningContainer.innerHTML += `
+                            <div>
+                                <input type="checkbox" id="listening-q-${index}" value="${q.id}" onchange="updateSelectedQuestions()">
+                                <label for="listening-q-${index}">${q.content} (${q.skill})</label>
+                            </div>
+                        `;
+            });
+
+            // Populate reading questions
+            const readingContainer = document.getElementById('reading-questions');
+            readingContainer.innerHTML = '<h4>Reading Questions (Chọn ' + numReading + ' câu)</h4>';
+            questionBank.reading.forEach((q, index) => {
+                readingContainer.innerHTML += `
+                            <div>
+                                <input type="checkbox" id="reading-q-${index}" value="${q.id}" onchange="updateSelectedQuestions()">
+                                <label for="reading-q-${index}">${q.content} (${q.skill})</label>
+                            </div>
+                        `;
+            });
+
+            questionSelection.classList.remove('hidden');
+            loadQuestionsBtn.classList.add('hidden');
+            createTestBtn.classList.remove('hidden');
+        });
+
+        // Update selected questions
+        window.updateSelectedQuestions = () => {
+            const numListening = parseInt(document.getElementById('num-listening').value);
+            const numReading = parseInt(document.getElementById('num-reading').value);
+            selectedQuestions = [];
+
+            // Get selected listening questions
+            const listeningCheckboxes = document.querySelectorAll('#listening-questions input[type="checkbox"]:checked');
+            listeningCheckboxes.forEach(checkbox => {
+                const q = questionBank.listening.find(q => q.id === checkbox.value);
+                selectedQuestions.push(q);
+            });
+
+            // Get selected reading questions
+            const readingCheckboxes = document.querySelectorAll('#reading-questions input[type="checkbox"]:checked');
+            readingCheckboxes.forEach(checkbox => {
+                const q = questionBank.reading.find(q => q.id === checkbox.value);
+                selectedQuestions.push(q);
+            });
+
+            // Validate selection count
+            const selectedListening = listeningCheckboxes.length;
+            const selectedReading = readingCheckboxes.length;
+            if (selectedListening !== numListening || selectedReading !== numReading) {
+                createTestBtn.disabled = true;
+                createTestBtn.title = `Vui lòng chọn đúng ${numListening} câu Listening và ${numReading} câu Reading. Hiện tại: ${selectedListening} Listening, ${selectedReading} Reading.`;
+            } else {
+                createTestBtn.disabled = false;
+                createTestBtn.title = '';
+            }
+        };
+
+        // Create custom test
+        customTestForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const numListening = parseInt(document.getElementById('num-listening').value);
+            const numReading = parseInt(document.getElementById('num-reading').value);
+            const fullName = fullNameInput.value.trim();
+            const email = emailInput.value.trim();
+            const phone = phoneInput.value.trim();
+
+            const selectedListening = document.querySelectorAll('#listening-questions input[type="checkbox"]:checked').length;
+            const selectedReading = document.querySelectorAll('#reading-questions input[type="checkbox"]:checked').length;
+
+            if (selectedListening !== numListening || selectedReading !== numReading) {
+                alert(`Vui lòng chọn đúng ${numListening} câu Listening và ${numReading} câu Reading!`);
+                return;
+            }
+
+            closeCustomTestModal();
+            loadTestQuestions(fullName, email, phone);
+            mockTestSection.classList.add('hidden');
+            testTakingSection.classList.remove('hidden');
+        });
+
+        // Load test questions into the test-taking section
+        function loadTestQuestions(fullName, email, phone) {
+            const testQuestionsDiv = document.getElementById('test-questions');
+            testQuestionsDiv.innerHTML = '';
+
+            let questionIndex = 1;
+            // Add Listening questions
+            testQuestionsDiv.innerHTML += '<div class="test-section"><h3>Phần 1: Listening</h3></div>';
+            selectedQuestions.filter(q => q.skill.includes('Listening')).forEach(q => {
+                testQuestionsDiv.innerHTML += `
+                            <div class="question-group">
+                                <label><strong>Câu ${questionIndex}:</strong> ${q.content}</label>
+                                ${q.file ? `<audio controls src="${q.file}"></audio>` : ''}
+                                <div>
+                                    <input type="radio" id="q${questionIndex}-a" name="q${questionIndex}" value="a">
+                                    <label for="q${questionIndex}-a">A. ${q.options[0]}</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q${questionIndex}-b" name="q${questionIndex}" value="b">
+                                    <label for="q${questionIndex}-b">B. ${q.options[1]}</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q${questionIndex}-c" name="q${questionIndex}" value="c">
+                                    <label for="q${questionIndex}-c">C. ${q.options[2]}</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q${questionIndex}-d" name="q${questionIndex}" value="d">
+                                    <label for="q${questionIndex}-d">D. ${q.options[3]}</label>
+                                </div>
+                            </div>
+                        `;
+                questionIndex++;
+            });
+
+            // Add Reading questions
+            testQuestionsDiv.innerHTML += '<div class="test-section"><h3>Phần 2: Reading</h3></div>';
+            selectedQuestions.filter(q => q.skill.includes('Reading')).forEach(q => {
+                testQuestionsDiv.innerHTML += `
+                            <div class="question-group">
+                                <label><strong>Câu ${questionIndex}:</strong> ${q.content}</label>
+                                ${q.file ? `<p>File đính kèm: <a href="${q.file}" target="_blank">Xem file</a></p>` : ''}
+                                <div>
+                                    <input type="radio" id="q${questionIndex}-a" name="q${questionIndex}" value="a">
+                                    <label for="q${questionIndex}-a">A. ${q.options[0]}</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q${questionIndex}-b" name="q${questionIndex}" value="b">
+                                    <label for="q${questionIndex}-b">B. ${q.options[1]}</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q${questionIndex}-c" name="q${questionIndex}" value="c">
+                                    <label for="q${questionIndex}-c">C. ${q.options[2]}</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="q${questionIndex}-d" name="q${questionIndex}" value="d">
+                                    <label for="q${questionIndex}-d">D. ${q.options[3]}</label>
+                                </div>
+                            </div>
+                        `;
+                questionIndex++;
+            });
+        }
+
+        // Save draft
+        saveDraftBtn.addEventListener('click', () => {
+            const numQuestions = selectedQuestions.length;
+            const answers = {};
+            for (let i = 1; i <= numQuestions; i++) {
+                const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                answers[`q${i}`] = selectedAnswer ? selectedAnswer.value : null;
+            }
+            localStorage.setItem('toeic-draft', JSON.stringify(answers));
+            alert('Đã lưu nháp thành công!');
+        });
+
+        // Submit test
+        mockTestForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const numQuestions = selectedQuestions.length;
+            const answers = {};
+            let allAnswered = true;
+
+            for (let i = 1; i <= numQuestions; i++) {
+                const selectedAnswer = document.querySelector(`input[name="q${i}"]:checked`);
+                if (!selectedAnswer) {
+                    allAnswered = false;
+                    break;
+                }
+                answers[`q${i}`] = selectedAnswer.value;
+            }
+
+            if (!allAnswered) {
+                alert('Vui lòng trả lời tất cả các câu hỏi!');
+                return;
+            }
+
+            // Grade the test
+            let score = 0;
+            const correctAnswers = {};
+            selectedQuestions.forEach((q, index) => {
+                correctAnswers[`q${index + 1}`] = q.correctAnswer;
+                if (answers[`q${index + 1}`] === q.correctAnswer) {
+                    score++;
+                }
+            });
+
+            const fullName = fullNameInput.value.trim();
+            const email = emailInput.value.trim();
+            const phone = phoneInput.value.trim();
+            const result = {
+                date: new Date().toLocaleString(),
+                fullName: fullName,
+                email: email,
+                phone: phone,
+                type: testTypeSelect.value === 'premade' ? premadeTestSelect.value : 'Custom',
+                score: score * (990 / numQuestions), // Scale to TOEIC score (990 max)
+                time: '20 phút', // As specified
+                answers: answers,
+                correctAnswers: correctAnswers,
+                questions: selectedQuestions
+            };
+
+            testHistory.push(result);
+            localStorage.removeItem('toeic-draft');
+
+            // Show history section
+            testTakingSection.classList.add('hidden');
+            testHistorySection.classList.remove('hidden');
+            updateTestHistoryTable();
+        });
+
+        // Update test history table
+        function updateTestHistoryTable() {
+            const tbody = document.getElementById('test-history-table');
+            tbody.innerHTML = '';
+            testHistory.forEach((result, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                            <td>${result.date}</td>
+                            <td>${result.fullName}</td>
+                            <td>${result.email}</td>
+                            <td>${result.phone}</td>
+                            <td>${result.type}</td>
+                            <td>${Math.round(result.score)}/990</td>
+                            <td>${result.time}</td>
+                            <td>
+                                <button class="btn btn-primary-v2 btn-sm" onclick="viewTestDetails(${index})">Xem chi tiết</button>
+                            </td>
+                        `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // View test details
+        window.viewTestDetails = (index) => {
+            const result = testHistory[index];
+            testHistorySection.classList.add('hidden');
+            reviewTestSection.classList.remove('hidden');
+
+            const reviewContent = document.getElementById('review-test-content');
+            reviewContent.innerHTML = `
+                        <h3>Kết quả bài thi: ${result.date}</h3>
+                        <p><strong>Họ và tên:</strong> ${result.fullName}</p>
+                        <p><strong>Email:</strong> ${result.email}</p>
+                        <p><strong>Số điện thoại:</strong> ${result.phone}</p>
+                        <p><strong>Điểm số:</strong> ${Math.round(result.score)}/990</p>
+                        <p><strong>Thời gian:</strong> ${result.time}</p>
+                        <h4>Chi tiết đáp án:</h4>
+                    `;
+
+            result.questions.forEach((q, i) => {
+                const userAnswer = result.answers[`q${i + 1}`];
+                const correctAnswer = result.correctAnswers[`q${i + 1}`];
+                const isCorrect = userAnswer === correctAnswer;
+                reviewContent.innerHTML += `
+                            <div class="question-review">
+                                <p><strong>Câu ${i + 1}:</strong> ${q.content}</p>
+                                <p>Đáp án của bạn: ${userAnswer.toUpperCase()} | Đáp án đúng: ${correctAnswer.toUpperCase()}</p>
+                                <p style="color: ${isCorrect ? 'green' : 'red'}">${isCorrect ? 'Đúng' : 'Sai'}</p>
+                            </div>
+                        `;
+            });
+
+            reviewContent.innerHTML += `
+                        <button class="btn btn-secondary-v2" onclick="backToHistory()">Quay lại</button>
+                    `;
+        };
+
+        // Back to history
+        window.backToHistory = () => {
+            reviewTestSection.classList.add('hidden');
+            testHistorySection.classList.remove('hidden');
+        };
+    });
+</script>
+
+<style>
+    .test-section {
+        margin-bottom: 20px;
+    }
+
+    .question-group {
+        margin: 15px 0;
+    }
+
+        .question-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .question-group audio {
+            margin: 10px 0;
+        }
+
+        .question-group div {
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+
+    .form-actions {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    .question-review {
+        margin: 10px 0;
+        border-bottom: 1px solid var(--border-color-student);
+        padding-bottom: 10px;
+    }
+
+    #question-selection h4 {
+        margin-top: 15px;
+    }
+
+    #question-selection div {
+        margin: 5px 0;
+    }
+</style>

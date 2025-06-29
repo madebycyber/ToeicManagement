@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Ôn luyện thi TOEIC";
+    Layout = "_Layout";
+}
+
+<div id="toeic-practice-content">
+    <header class="page-header content-header">
+        <h1><span class="header-icon">📚</span>Ôn luyện thi TOEIC</h1>
+    </header>
+
+    <div id="content-wrapper">
+        <!-- Teacher Section: Create and Assign Test -->
+        <div id="teacher-section" class="card">
+            <h2>Giáo viên: Tạo và Giao bài ôn luyện</h2>
+            <div id="create-test-view">
+                <h3>Tạo đề ôn luyện</h3>
+                <form id="create-test-form">
+                    <div class="form-group">
+                        <label for="test-title">Tiêu đề đề thi: *</label>
+                        <input type="text" id="test-title" name="testTitle" required placeholder="VD: Đề ôn luyện TOEIC Part 5">
+                    </div>
+                    <div class="form-group">
+                        <label for="test-level">Trình độ: *</label>
+                        <select id="test-level" name="testLevel" required>
+                            <option value="">-- Chọn trình độ --</option>
+                            <option value="beginner">Sơ cấp</option>
+                            <option value="intermediate">Trung cấp</option>
+                            <option value="advanced">Nâng cao</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="test-mode">Chế độ: *</label>
+                        <select id="test-mode" name="testMode" required>
+                            <option value="">-- Chọn chế độ --</option>
+                            <option value="listening">Listening</option>
+                            <option value="reading">Reading</option>
+                            <option value="full">Full Test</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary">Hủy</button>
+                        <button type="submit" class="btn btn-success">Tạo đề</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Grade Test -->
+            <div id="grade-test-view" class="hidden">
+                <h3>Chấm bài ôn luyện</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Học sinh</th>
+                                <th>Ngày nộp</th>
+                                <th>Trình độ</th>
+                                <th>Chế độ</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nguyễn Văn A</td>
+                                <td>29/05/2025</td>
+                                <td>Trung cấp</td>
+                                <td>Full Test</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">Chấm bài</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin Section: Approve Test -->
+        <div id="admin-section" class="card">
+            <h2>Quản trị viên: Duyệt đề ôn luyện</h2>
+            <div id="approve-test-view">
+                <h3>Duyệt đề ôn luyện</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tiêu đề đề</th>
+                                <th>Giáo viên</th>
+                                <th>Trình độ</th>
+                                <th>Chế độ</th>
+                                <th>Trạng thái</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Đề ôn luyện TOEIC Part 5</td>
+                                <td>Giáo viên A</td>
+                                <td>Trung cấp</td>
+                                <td>Reading</td>
+                                <td>Chờ duyệt</td>
+                                <td>
+                                    <button class="btn btn-primary btn-sm">Xem chi tiết</button>
+                                    <button class="btn btn-success btn-sm">Duyệt</button>
+                                    <button class="btn btn-danger btn-sm">Từ chối</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

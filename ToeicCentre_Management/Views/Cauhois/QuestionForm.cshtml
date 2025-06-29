@@ -1,0 +1,230 @@
+﻿@model ToeicCentre_Management.ViewModels.QuestionFormViewModel
+
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = Model.Id == 0 ? "Thêm mới câu hỏi" : "Chỉnh sửa câu hỏi";
+}
+
+<header class="page-header content-header">
+    <h1>
+        <span class="header-icon">✍️</span> @ViewData["Title"]
+    </h1>
+</header>
+
+<form asp-action="Save" method="post" enctype="multipart/form-data" class="card form-layout" id="question-form">
+
+    <input type="hidden" asp-for="Id" />
+    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+    <!-- Dropdown Part -->
+    <div class="form-group">
+        <label asp-for="SelectedPartId" class="form-label"></label>
+        <select asp-for="SelectedPartId" asp-items="Model.Parts" id="part-select" class="form-select">
+            <option value="">-- Chọn Phần thi --</option>
+        </select>
+        <span asp-validation-for="SelectedPartId" class="text-danger"></span>
+        <small>Lựa chọn Part sẽ ảnh hưởng đến các trường bên dưới.</small>
+    </div>
+
+    <!-- Fieldset Nhóm câu hỏi -->
+    <fieldset id="group-section" class="conditional-section" style="display:none;">
+        <legend>Nhóm câu hỏi (Part 3, 4, 6, 7)</legend>
+        <div class="form-group">
+            <div class="form-check">
+                <input asp-for="CreateNewGroup" type="radio" value="false" class="form-check-input" id="select-existing-group-radio" />
+                <label class="form-check-label" for="select-existing-group-radio">Chọn nhóm có sẵn</label>
+            </div>
+            <select asp-for="ExistingGroupId" class="form-control mt-2" disabled>
+                <option value="">-- Tìm kiếm nhóm... --</option>
+            </select>
+        </div>
+        <div class="form-group mt-3">
+            <div class="form-check">
+                <input asp-for="CreateNewGroup" type="radio" value="true" class="form-check-input" id="create-new-group-radio" checked />
+                <label class="form-check-label" for="create-new-group-radio">Tạo nhóm mới</label>
+            </div>
+            <div id="new-group-fields">
+                <textarea asp-for="GroupPassageText" placeholder="Nhập đoạn văn/script..." rows="4" class="form-control mt-2"></textarea>
+                <label class="mt-2" asp-for="GroupAudioFile"></label>
+                <input asp-for="GroupAudioFile" type="file" class="form-control" accept="audio/*" />
+                <!-- Audio Preview cho Nhóm -->
+                <div class="mt-2 preview-group-audio-player" style="display: none;">
+                    <small>Nghe trước file audio nhóm:</small>
+                    <audio controls class="w-100"></audio>
+                </div>
+            </div>
+        </div>
+        <div class="form-group mt-3">
+            <label asp-for="OrderInGroup"></label>
+            <input asp-for="OrderInGroup" type="number" class="form-control" min="1" />
+        </div>
+    </fieldset>
+
+    <!-- Fieldset Ảnh (Part 1) -->
+    <fieldset id="image-section" class="conditional-section" style="display:none;">
+        <legend>Hình ảnh (Part 1)</legend>
+        <div class="form-group">
+            <label asp-for="ImageFile"></label>
+            <input asp-for="ImageFile" type="file" class="form-control" accept="image/*">
+            <div id="image-preview-container" class="mt-2" style="display: @(string.IsNullOrEmpty(Model.ExistingImagePath) ? "none" : "block");">
+                <small>Xem trước:</small>
+                <img id="image-preview-img" src="@(string.IsNullOrEmpty(Model.ExistingImagePath) ? "#" : Url.Content("~/" + Model.ExistingImagePath))" width="300" class="img-thumbnail" alt="Image Preview" />
+            </div>
+        </div>
+    </fieldset>
+
+    <!-- Fieldset Audio (Part 1, 2, 3, 4) -->
+    <fieldset id="audio-section" class="conditional-section" style="display:none;">
+        <legend>Audio riêng</legend>
+        <div class="form-group">
+            <label asp-for="AudioFile"></label>
+            <input asp-for="AudioFile" type="file" class="form-control" accept="audio/*">
+            <div class="mt-2">
+                @if (!string.IsNullOrEmpty(Model.ExistingAudioPath))
+                {
+                    <div id="existing-audio-player">
+                        <small>Audio hiện tại:</small>
+                        <audio src="@Url.Content("~/" + Model.ExistingAudioPath)" controls class="w-100"></audio>
+                    </div>
+                }
+                <div id="preview-audio-player" style="display: none;">
+                    <small>Nghe trước file mới:</small>
+                    <audio controls class="w-100"></audio>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+    <!-- Nội dung câu hỏi (sẽ được ẩn/hiện bởi JS) -->
+    <div class="form-group" id="question-content-section">
+        <label asp-for="QuestionContent"></label>
+        <textarea asp-for="QuestionContent" rows="3" class="form-control"></textarea>
+    </div>
+
+    <!-- Fieldset Đáp án -->
+    <fieldset class="answers">
+        <legend>Các lựa chọn đáp án *</legend>
+        <small>Chọn một đáp án đúng.</small>
+        <span asp-validation-for="CorrectAnswerKey" class="text-danger d-block mb-2"></span>
+        <div class="answer-option">
+            <input asp-for="CorrectAnswerKey" type="radio" value="A" id="ans_a_radio" class="form-check-input">
+            <label for="AnswerA" class="form-label">A:</label>
+            <input asp-for="AnswerA" type="text" class="form-control">
+            <span asp-validation-for="AnswerA" class="text-danger"></span>
+        </div>
+        <div class="answer-option">
+            <input asp-for="CorrectAnswerKey" type="radio" value="B" id="ans_b_radio" class="form-check-input">
+            <label for="AnswerB" class="form-label">B:</label>
+            <input asp-for="AnswerB" type="text" class="form-control">
+            <span asp-validation-for="AnswerB" class="text-danger"></span>
+        </div>
+        <div class="answer-option">
+            <input asp-for="CorrectAnswerKey" type="radio" value="C" id="ans_c_radio" class="form-check-input">
+            <label for="AnswerC" class="form-label">C:</label>
+            <input asp-for="AnswerC" type="text" class="form-control">
+            <span asp-validation-for="AnswerC" class="text-danger"></span>
+        </div>
+        <div class="answer-option" id="answer-d-option">
+            <input asp-for="CorrectAnswerKey" type="radio" value="D" id="ans_d_radio" class="form-check-input">
+            <label for="AnswerD" class="form-label">D:</label>
+            <input asp-for="AnswerD" type="text" class="form-control">
+            <span asp-validation-for="AnswerD" class="text-danger"></span>
+        </div>
+    </fieldset>
+
+    <!-- Giải thích -->
+    <div class="form-group">
+        <label asp-for="Explanation"></label>
+        <textarea asp-for="Explanation" rows="4" class="form-control"></textarea>
+    </div>
+
+    <!-- Nút Hành động -->
+    <div class="form-actions">
+        <a asp-action="Index" class="btn btn-secondary">Hủy bỏ</a>
+        <button type="submit" class="btn btn-success">Lưu</button>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            function updateFormFields() {
+                var partId = $('#part-select').val();
+                $('#group-section, #image-section, #audio-section').hide();
+                $('#question-content-section').show();
+                $('#answer-d-option').show();
+
+                if (partId === '1') {
+                    $('#image-section').show();
+                    $('#audio-section').show();
+                    $('#question-content-section').hide();
+                } else if (partId === '2') {
+                    $('#audio-section').show();
+                    $('#question-content-section').hide();
+                    $('#answer-d-option').hide();
+                } else if (partId === '3' || partId === '4') {
+                    $('#group-section').show();
+                    $('#audio-section').show();
+                } else if (partId === '6' || partId === '7') {
+                    $('#group-section').show();
+                }
+            }
+
+            function handleGroupSelection() {
+                var createNew = $('#create-new-group-radio').is(':checked');
+                if (createNew) {
+                    $('select[name="ExistingGroupId"]').prop('disabled', true);
+                    $('#new-group-fields textarea, #new-group-fields input[type="file"]').prop('disabled', false);
+                } else {
+                    $('select[name="ExistingGroupId"]').prop('disabled', false);
+                    $('#new-group-fields textarea, #new-group-fields input[type="file"]').prop('disabled', true);
+                }
+            }
+
+            function previewImage(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('#image-preview-container').show();
+                        $('#image-preview-img').attr('src', e.target.result);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            function previewAudio(input) {
+                if (input.files && input.files[0]) {
+                    var playerContainer = $(input).closest('.form-group, #new-group-fields').find('.preview-audio-player, #preview-audio-player');
+                    var audioPlayer = playerContainer.find('audio');
+
+                    audioPlayer.attr('src', URL.createObjectURL(input.files[0]));
+
+                    $(input).closest('.form-group, #new-group-fields').find('#existing-audio-player').hide();
+                    playerContainer.show();
+                }
+            }
+
+            $(document).on('change', 'input[type=file][name=ImageFile]', function () {
+                previewImage(this);
+            });
+
+            $(document).on('change', 'input[type=file][name=AudioFile]', function () {
+                previewAudio(this);
+            });
+
+            $(document).on('change', 'input[type=file][name=GroupAudioFile]', function () {
+                previewAudio(this);
+            });
+
+            $('#part-select').on('change', updateFormFields);
+            $('input[name="CreateNewGroup"]').on('change', handleGroupSelection);
+
+            updateFormFields();
+            handleGroupSelection();
+        });
+    </script>
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

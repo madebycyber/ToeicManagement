@@ -1,0 +1,60 @@
+﻿@model ToeicCentre_Management.Models.Phieubaitaponluyen
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Phieubaitaponluyen</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Lop)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Lop)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DangCauHoi)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DangCauHoi)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ThoiGianGiao)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ThoiGianGiao)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ThoiGianNop)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ThoiGianNop)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DiemSo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DiemSo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NhanXet)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NhanXet)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MaSvNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MaSvNavigation.MaSv)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdPhieuBaiTap">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

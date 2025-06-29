@@ -1,0 +1,270 @@
+﻿@{
+    ViewData["Title"] = "Ôn luyện thi TOEIC";
+    Layout = "_UserLayout";
+}
+
+<main class="student-main-content">
+    <div class="container main-content-body">
+        <!-- HERO SLIDER SECTION -->
+        <section class="hero-slider-section">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1280&q=80&blur=5')">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h1>Đăng ký ôn luyện TOEIC</h1>
+                            <p>Chọn lớp học online hoặc offline để bắt đầu hành trình chinh phục TOEIC.</p>
+                            <a href="#registration-section" class="btn btn-primary-v2 btn-slide">Đăng ký ngay</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1280&q=80&blur=5')">
+                        <div class="slide-overlay"></div>
+                        <div class="slide-content">
+                            <h1>Chọn chế độ luyện tập</h1>
+                            <p>Thực hành với Full Test hoặc Short Exercise để cải thiện kỹ năng.</p>
+                            <a href="#practice-section" class="btn btn-primary-v2 btn-slide">Bắt đầu luyện tập</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination hero-swiper-pagination"></div>
+                <div class="swiper-button-prev hero-swiper-button-prev"></div>
+                <div class="swiper-button-next hero-swiper-button-next"></div>
+            </div>
+        </section>
+
+        <!-- REGISTRATION SECTION -->
+        <section id="registration-section" class="filters-and-search-student card-ui-v2">
+            <h2>Đăng ký lớp ôn luyện</h2>
+            <form id="register-practice-form">
+                <div class="filter-controls-student-v2">
+                    <div class="filter-group-student">
+                        <label for="class-type">Loại lớp: *</label>
+                        <select id="class-type" name="classType" required>
+                            <option value="">-- Chọn loại lớp --</option>
+                            <option value="online">Online</option>
+                            <option value="offline">Offline</option>
+                        </select>
+                    </div>
+                    <div class="filter-group-student">
+                        <label for="class-level">Trình độ: *</label>
+                        <select id="class-level" name="classLevel" required>
+                            <option value="">-- Chọn trình độ --</option>
+                            <option value="beginner">Sơ cấp (200-400)</option>
+                            <option value="intermediate">Trung cấp (400-600)</option>
+                            <option value="advanced">Nâng cao (600-900)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary-v2"><i class="fas fa-check"></i> Đăng ký</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- PRACTICE SECTION -->
+        <section id="practice-section" class="filters-and-search-student card-ui-v2">
+            <h2>Chọn chế độ ôn luyện</h2>
+            <form id="practice-mode-form">
+                <div class="filter-controls-student-v2">
+                    <div class="filter-group-student">
+                        <label for="practice-mode">Chế độ: *</label>
+                        <select id="practice-mode" name="practiceMode" required>
+                            <option value="">-- Chọn chế độ --</option>
+                            <option value="full">Full Test</option>
+                            <option value="short">Short Exercise</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary-v2"><i class="fas fa-play"></i> Bắt đầu</button>
+                </div>
+            </form>
+            <div id="do-practice-view" class="hidden">
+                <h3>Làm bài ôn luyện</h3>
+                <form id="practice-test-form">
+                    <div class="form-group">
+                        <label for="question-1">Câu 1:  People who arrive more than 30 minutes ______ the opera begins should wait in the lobby until the doors to the main hall are opened.</label>
+                        <div>
+                            <input type="radio" id="q1-a" name="question1" value="a">
+                            <label for="q1-a">A. when</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q1-b" name="question1" value="b">
+                            <label for="q1-b">B. before</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q1-c" name="question1" value="c">
+                            <label for="q1-c">C. since</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q1-c" name="question1" value="c">
+                            <label for="q1-d">D. during</label>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary-v2">Nộp bài</button>
+                    </div>
+                </form>
+            </div>
+            <div id="view-results-view" class="hidden">
+                <h3>Kết quả ôn luyện</h3>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Ngày làm bài</th>
+                                <th>Trình độ</th>
+                                <th>Chế độ</th>
+                                <th>Điểm số</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>29/05/2025</td>
+                                <td>Trung cấp</td>
+                                <td>Full Test</td>
+                                <td>550/990</td>
+                                <td>
+                                    <button class="btn btn-primary-v2 btn-sm">Xem chi tiết</button>
+                                    <button class="btn btn-secondary-v2 btn-sm">Tiếp tục ôn luyện</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- Registration Modal -->
+<div class="modal hidden" id="registration-modal" role="dialog" aria-labelledby="registration-modal-title">
+    <div class="modal-header">
+        <h2 id="registration-modal-title">Đăng ký thông tin học viên</h2>
+        <button class="close-button" id="close-registration-modal" aria-label="Đóng">×</button>
+    </div>
+    <div class="modal-body">
+        <form id="student-registration-form">
+            <div class="filter-group-student">
+                <label for="full-name">Họ và tên: *</label>
+                <input type="text" id="full-name" name="fullName" required placeholder="Nhập họ và tên">
+            </div>
+            <div class="filter-group-student">
+                <label for="email">Email: *</label>
+                <input type="email" id="email" name="email" required placeholder="Nhập email">
+            </div>
+            <div class="filter-group-student">
+                <label for="phone">Số điện thoại: *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại" pattern="[0-9]{10}">
+            </div>
+            <div class="filter-group-student">
+                <label for="address">Địa chỉ: *</label>
+                <input type="text" id="address" name="address" required placeholder="Nhập địa chỉ">
+            </div>
+            <input type="hidden" id="class-type-hidden" name="classType">
+            <input type="hidden" id="class-level-hidden" name="classLevel">
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary-v2" id="cancel-registration">Hủy</button>
+        <button type="submit" form="student-registration-form" class="btn btn-primary-v2">Xác nhận đăng ký</button>
+    </div>
+
+    <!-- JavaScript for Modal and Form Handling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const registerForm = document.getElementById('register-practice-form');
+            const registrationModal = document.getElementById('registration-modal');
+            const closeModalBtn = document.getElementById('close-registration-modal');
+            const cancelBtn = document.getElementById('cancel-registration');
+            const modalOverlay = document.getElementById('student-modal-overlay');
+            const studentForm = document.getElementById('student-registration-form');
+            const practiceModeForm = document.getElementById('practice-mode-form');
+            const doPracticeView = document.getElementById('do-practice-view');
+            const viewResultsView = document.getElementById('view-results-view');
+
+            registerForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const classType = document.getElementById('class-type').value;
+                const classLevel = document.getElementById('class-level').value;
+
+                if (classType && classLevel) {
+                    document.getElementById('class-type-hidden').value = classType;
+                    document.getElementById('class-level-hidden').value = classLevel;
+                    modalOverlay.classList.remove('hidden');
+                    registrationModal.classList.remove('hidden');
+                } else {
+                    alert('Vui lòng chọn loại lớp và trình độ!');
+                }
+            });
+
+            closeModalBtn.addEventListener('click', () => {
+                modalOverlay.classList.add('hidden');
+                registrationModal.classList.add('hidden');
+            });
+
+            cancelBtn.addEventListener('click', () => {
+                modalOverlay.classList.add('hidden');
+                registrationModal.classList.add('hidden');
+            });
+
+            studentForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const fullName = document.getElementById('full-name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const address = document.getElementById('address').value;
+                const classType = document.getElementById('class-type-hidden').value;
+                const classLevel = document.getElementById('class-level-hidden').value;
+
+                if (fullName && email && phone && address) {
+                    // Simulate form submission (replace with actual API call)
+                    console.log({
+                        fullName,
+                        email,
+                        phone,
+                        address,
+                        classType,
+                        classLevel
+                    });
+                    alert('Đăng ký thành công! Vui lòng kiểm tra email để xác nhận.');
+                    modalOverlay.classList.add('hidden');
+                    registrationModal.classList.add('hidden');
+                    registerForm.reset();
+                } else {
+                    alert('Vui lòng điền đầy đủ thông tin!');
+                }
+            });
+            // Handle practice mode form submission
+            practiceModeForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const practiceMode = document.getElementById('practice-mode').value;
+
+                if (practiceMode) {
+                    // Hide all practice-related views
+                    doPracticeView.classList.add('hidden');
+                    viewResultsView.classList.add('hidden');
+
+                    // Show the do-practice view based on the selected mode
+                    if (practiceMode === 'full' || practiceMode === 'short') {
+                        doPracticeView.classList.remove('hidden');
+                    } else {
+                        alert('Vui lòng chọn chế độ luyện tập!');
+                    }
+                } else {
+                    alert('Vui lòng chọn chế độ luyện tập!');
+                }
+            });
+
+            // Handle practice test form submission (placeholder)
+            document.getElementById('practice-test-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                const selectedAnswer = document.querySelector('input[name="question1"]:checked');
+                if (selectedAnswer) {
+                    alert('Bạn đã chọn: ' + selectedAnswer.value + '. Kết quả sẽ được xử lý (chưa triển khai).');
+                    // TODO: Implement scoring logic and show results
+                    doPracticeView.classList.add('hidden');
+                    viewResultsView.classList.remove('hidden');
+                } else {
+                    alert('Vui lòng chọn một đáp án!');
+                }
+            });
+        });
+    </script>

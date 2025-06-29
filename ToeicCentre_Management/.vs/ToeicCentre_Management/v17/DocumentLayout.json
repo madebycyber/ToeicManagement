@@ -1,0 +1,697 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\controllers\\questionsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\questionsapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\controllers\\sinhvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\sinhvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\cauhois\\questionform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\cauhois\\questionform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\wwwroot\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:wwwroot\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\viewmodels\\questionformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:viewmodels\\questionformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\viewmodels\\questionbankviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:viewmodels\\questionbankviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\cauhois\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\cauhois\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\controllers\\cauhoiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\cauhoiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\models\\lichsuduyetch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\lichsuduyetch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\QuestionsApiController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\controllers\\cauhoibaitapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\cauhoibaitapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\models\\phanloaich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\phanloaich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\models\\cauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\cauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\CauHoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\home\\gradetoeictest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\home\\gradetoeictest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\data\\toieccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:data\\toieccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:wwwroot\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\phieubaitaponluyens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\phieubaitaponluyens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\shared\\_userlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\models\\cauhoibaitap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\cauhoibaitap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\controllers\\phieubaitaponluyenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\phieubaitaponluyenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\models\\dangkyonluyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\dangkyonluyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\models\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\models\\phieubaitaponluyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\phieubaitaponluyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\home\\toeicpractice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\home\\toeicpractice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\home\\usertoeicmocktest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\home\\usertoeicmocktest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\home\\toeicmocktest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\home\\toeicmocktest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\home\\usertoeicpractice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\home\\usertoeicpractice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\sinhviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\sinhviens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\phieubaitaponluyens\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\phieubaitaponluyens\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\controllers\\dangkyonluyenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\dangkyonluyenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\controllers\\dangkythithuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\dangkythithuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\views\\home\\userviewresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\home\\userviewresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\TOIECContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\TOIECContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|e:\\tai lieu hoc tap\\k\u00EC 2 n\u0103m 4\\tt cntt\\visual project\\quanlytoeic\\toeiccentre_management\\wwwroot\\frontend\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:wwwroot\\frontend\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "admin.css",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\admin.css",
+              "RelativeDocumentMoniker": "wwwroot\\admin.css",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\admin.css",
+              "RelativeToolTip": "wwwroot\\admin.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-29T14:59:34.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "style.css",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\style.css",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\style.css",
+              "RelativeToolTip": "wwwroot\\style.css",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAACoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-29T13:10:16.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GradeToeicTest.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\GradeToeicTest.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\GradeToeicTest.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\GradeToeicTest.cshtml",
+              "RelativeToolTip": "Views\\Home\\GradeToeicTest.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T09:00:31.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PhieubaitaponluyensController.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\PhieubaitaponluyensController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PhieubaitaponluyensController.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\PhieubaitaponluyensController.cs",
+              "RelativeToolTip": "Controllers\\PhieubaitaponluyensController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:23:12.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Cauhoi.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Cauhoi.cs",
+              "RelativeDocumentMoniker": "Models\\Cauhoi.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Cauhoi.cs",
+              "RelativeToolTip": "Models\\Cauhoi.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAmwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:38:57.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuestionFormViewModel.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\ViewModels\\QuestionFormViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\QuestionFormViewModel.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\ViewModels\\QuestionFormViewModel.cs",
+              "RelativeToolTip": "ViewModels\\QuestionFormViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:40:13.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuestionForm.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Cauhois\\QuestionForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cauhois\\QuestionForm.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Cauhois\\QuestionForm.cshtml",
+              "RelativeToolTip": "Views\\Cauhois\\QuestionForm.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T14:56:04.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SinhviensController.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\SinhviensController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SinhviensController.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\SinhviensController.cs",
+              "RelativeToolTip": "Controllers\\SinhviensController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T02:01:56.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuestionsApiController.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\QuestionsApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuestionsApiController.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\QuestionsApiController.cs",
+              "RelativeToolTip": "Controllers\\QuestionsApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:48:46.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "QuestionBankViewModel.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\ViewModels\\QuestionBankViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\QuestionBankViewModel.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\ViewModels\\QuestionBankViewModel.cs",
+              "RelativeToolTip": "ViewModels\\QuestionBankViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T13:40:02.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "QuestionsApiController.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\QuestionsApiController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\QuestionsApiController.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\QuestionsApiController.cs",
+              "RelativeToolTip": "..\\..\\..\\QuestionsApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:46:50.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Cauhois\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cauhois\\Index.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Cauhois\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cauhois\\Index.cshtml",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAAwGsAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T14:48:07.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Lichsuduyetch.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Lichsuduyetch.cs",
+              "RelativeDocumentMoniker": "Models\\Lichsuduyetch.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Lichsuduyetch.cs",
+              "RelativeToolTip": "Models\\Lichsuduyetch.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:50:55.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CauhoisController.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\CauhoisController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CauhoisController.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\CauhoisController.cs",
+              "RelativeToolTip": "Controllers\\CauhoisController.cs",
+              "ViewState": "AQIAALcAAAAAAAAAAAAawMsAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T09:36:05.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CauHoi.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\CauHoi.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\CauHoi.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\CauHoi.cs",
+              "RelativeToolTip": "..\\..\\..\\CauHoi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:38:40.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CauhoibaitapsController.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\CauhoibaitapsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CauhoibaitapsController.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\CauhoibaitapsController.cs",
+              "RelativeToolTip": "Controllers\\CauhoibaitapsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:25:48.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Phanloaich.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Phanloaich.cs",
+              "RelativeDocumentMoniker": "Models\\Phanloaich.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Phanloaich.cs",
+              "RelativeToolTip": "Models\\Phanloaich.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:42:14.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ToeicMockTest.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\ToeicMockTest.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\ToeicMockTest.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\ToeicMockTest.cshtml",
+              "RelativeToolTip": "Views\\Home\\ToeicMockTest.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T07:26:20.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TOEICPractice.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\TOEICPractice.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\TOEICPractice.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\TOEICPractice.cshtml",
+              "RelativeToolTip": "Views\\Home\\TOEICPractice.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T01:49:02.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TOIECContext.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Data\\TOIECContext.cs",
+              "RelativeDocumentMoniker": "Data\\TOIECContext.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Data\\TOIECContext.cs",
+              "RelativeToolTip": "Data\\TOIECContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T01:56:40.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UserToeicMockTest.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\UserToeicMockTest.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\UserToeicMockTest.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\UserToeicMockTest.cshtml",
+              "RelativeToolTip": "Views\\Home\\UserToeicMockTest.cshtml",
+              "ViewState": "AQIAAP8AAAAAAAAAAAAcwBQBAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T07:25:42.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Phieubaitaponluyens\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Phieubaitaponluyens\\Index.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Phieubaitaponluyens\\Index.cshtml",
+              "RelativeToolTip": "Views\\Phieubaitaponluyens\\Index.cshtml",
+              "ViewState": "AQIAAL8AAAAAAAAAAAAlwOQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T12:27:13.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Cauhoibaitap.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Cauhoibaitap.cs",
+              "RelativeDocumentMoniker": "Models\\Cauhoibaitap.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Cauhoibaitap.cs",
+              "RelativeToolTip": "Models\\Cauhoibaitap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:34:28.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAUwF0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T01:54:28.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "_UserLayout.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_UserLayout.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_UserLayout.cshtml",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T02:19:51.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Sinhvien.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Sinhvien.cs",
+              "RelativeDocumentMoniker": "Models\\Sinhvien.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Sinhvien.cs",
+              "RelativeToolTip": "Models\\Sinhvien.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAwwEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:35:08.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Dangkyonluyen.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Dangkyonluyen.cs",
+              "RelativeDocumentMoniker": "Models\\Dangkyonluyen.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Dangkyonluyen.cs",
+              "RelativeToolTip": "Models\\Dangkyonluyen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:35:18.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserToeicPractice.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\UserToeicPractice.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\UserToeicPractice.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\UserToeicPractice.cshtml",
+              "RelativeToolTip": "Views\\Home\\UserToeicPractice.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T02:14:19.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Sinhviens\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Sinhviens\\Index.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Sinhviens\\Index.cshtml",
+              "RelativeToolTip": "Views\\Sinhviens\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T12:29:21.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Phieubaitaponluyen.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Phieubaitaponluyen.cs",
+              "RelativeDocumentMoniker": "Models\\Phieubaitaponluyen.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\Phieubaitaponluyen.cs",
+              "RelativeToolTip": "Models\\Phieubaitaponluyen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:26:11.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Phieubaitaponluyens\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Phieubaitaponluyens\\Edit.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Phieubaitaponluyens\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Phieubaitaponluyens\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T12:29:07.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DangkythithusController.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\DangkythithusController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DangkythithusController.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\DangkythithusController.cs",
+              "RelativeToolTip": "Controllers\\DangkythithusController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T09:42:56.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T01:38:28.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T01:57:11.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-25T01:52:19.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "DangkyonluyensController.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\DangkyonluyensController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DangkyonluyensController.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\DangkyonluyensController.cs",
+              "RelativeToolTip": "Controllers\\DangkyonluyensController.cs",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAqwKoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T02:31:08.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAIAwwCYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T02:17:20.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UserViewResults.cshtml",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\UserViewResults.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\UserViewResults.cshtml",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Views\\Home\\UserViewResults.cshtml",
+              "RelativeToolTip": "Views\\Home\\UserViewResults.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAswKoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T09:00:55.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "TOIECContext.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\TOIECContext.cs",
+              "RelativeDocumentMoniker": "Models\\TOIECContext.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\TOIECContext.cs",
+              "RelativeToolTip": "Models\\TOIECContext.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAQwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T01:55:00.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "style.css",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\frontend\\style.css",
+              "RelativeDocumentMoniker": "wwwroot\\frontend\\style.css",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\wwwroot\\frontend\\style.css",
+              "RelativeToolTip": "wwwroot\\frontend\\style.css",
+              "ViewState": "AQIAAFIDAAAAAAAAAAAcwG0DAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-05-29T02:35:14.597Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

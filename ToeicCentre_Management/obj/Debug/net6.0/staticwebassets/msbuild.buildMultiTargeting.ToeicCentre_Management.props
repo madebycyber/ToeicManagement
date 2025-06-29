@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ToeicCentre_Management.props" />
+</Project>

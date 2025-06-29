@@ -1,0 +1,167 @@
+﻿@{
+    ViewData["Title"] = "Quản lý thi thử TOEIC";
+    Layout = "_Layout"; // Assuming an admin layout exists
+}
+
+<main class="admin-main-content">
+    <div class="container main-content-body">
+        <!-- CREATE TEST SECTION -->
+        <section id="create-test-section" class="filters-and-search-student card-ui-v2">
+            <h2>Tạo đề thi thử TOEIC</h2>
+            <form id="create-test-form">
+                <div class="filter-controls-student-v2">
+                    <div class="filter-group-student">
+                        <label for="create-method">Phương thức tạo đề: *</label>
+                        <select id="create-method" name="createMethod" required>
+                            <option value="">-- Chọn phương thức --</option>
+                            <option value="manual">Thủ công</option>
+                            <option value="random">Ngẫu nhiên</option>
+                        </select>
+                    </div>
+                    <div class="filter-group-student">
+                        <label for="num-listening-admin">Số câu Listening: *</label>
+                        <input type="number" id="num-listening-admin" name="numListening" min="1" max="100" required value="5">
+                    </div>
+                    <div class="filter-group-student">
+                        <label for="num-reading-admin">Số câu Reading: *</label>
+                        <input type="number" id="num-reading-admin" name="numReading" min="1" max="100" required value="5">
+                    </div>
+                    <button type="submit" class="btn btn-primary-v2"><i class="fas fa-plus"></i> Tạo đề</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- APPROVE TEST SECTION -->
+        <section id="approve-test-section" class="filters-and-search-student card-ui-v2">
+            <h2>Phê duyệt đề thi thử</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ngày tạo</th>
+                            <th>Giáo viên</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="approve-test-table">
+                        <!-- Populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- GRADE TEST SECTION -->
+        <section id="grade-test-section" class="filters-and-search-student card-ui-v2">
+            <h2>Chấm bài thi thử</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Học sinh</th>
+                            <th>Ngày nộp</th>
+                            <th>Trạng thái</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="grade-test-table">
+                        <!-- Populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const createTestForm = document.getElementById('create-test-form');
+        const approveTestTable = document.getElementById('approve-test-table');
+        const gradeTestTable = document.getElementById('grade-test-table');
+
+        let tests = []; // Store tests for approval
+        let submissions = []; // Store student submissions
+
+        // Create test
+        createTestForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const createMethod = document.getElementById('create-method').value;
+            const numListening = document.getElementById('num-listening-admin').value;
+            const numReading = document.getElementById('num-reading-admin').value;
+
+            if (createMethod && numListening && numReading) {
+                const test = {
+                    date: new Date().toLocaleString(),
+                    teacher: "Giáo viên A", // Placeholder
+                    status: "Chờ duyệt",
+                    numListening,
+                    numReading,
+                    method: createMethod
+                };
+                tests.push(test);
+                updateApproveTestTable();
+                alert('Đã tạo đề thi và gửi để phê duyệt!');
+                createTestForm.reset();
+            } else {
+                alert('Vui lòng điền đầy đủ thông tin!');
+            }
+        });
+
+        // Update approve test table
+        function updateApproveTestTable() {
+            approveTestTable.innerHTML = '';
+            tests.forEach((test, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                        <td>${test.date}</td>
+                        <td>${test.teacher}</td>
+                        <td>${test.status}</td>
+                        <td>
+                            <button class="btn btn-primary-v2 btn-sm" onclick="approveTest(${index})" ${test.status !== 'Chờ duyệt' ? 'disabled' : ''}>Duyệt</button>
+                            <button class="btn btn-secondary-v2 btn-sm" onclick="rejectTest(${index})" ${test.status !== 'Chờ duyệt' ? 'disabled' : ''}>Không duyệt</button>
+                        </td>
+                    `;
+                approveTestTable.appendChild(row);
+            });
+        }
+
+        // Approve test
+        window.approveTest = (index) => {
+            tests[index].status = 'Đã duyệt';
+            updateApproveTestTable();
+            alert('Đã duyệt đề thi!');
+        };
+
+        // Reject test
+        window.rejectTest = (index) => {
+            tests[index].status = 'Không duyệt';
+            updateApproveTestTable();
+            alert('Đã từ chối đề thi! Yêu cầu chỉnh sửa.');
+        };
+
+        // Update grade test table (placeholder for student submissions)
+        function updateGradeTestTable() {
+            gradeTestTable.innerHTML = '';
+            submissions.forEach((submission, index) => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                        <td>${submission.student}</td>
+                        <td>${submission.date}</td>
+                        <td>${submission.status}</td>
+                        <td>
+                            <button class="btn btn-primary-v2 btn-sm" onclick="gradeTest(${index})">Chấm bài</button>
+                        </td>
+                    `;
+                gradeTestTable.appendChild(row);
+            });
+        }
+
+        // Grade test (placeholder)
+        window.gradeTest = (index) => {
+            submissions[index].status = 'Đã chấm';
+            updateGradeTestTable();
+            alert('Đã chấm bài! Điểm số sẽ được cập nhật (chưa triển khai chi tiết).');
+        };
+    });
+</script>

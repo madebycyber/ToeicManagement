@@ -1,0 +1,39 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Trang chủ - Thống kê hệ thống TOEIC";
+    var statistics = ViewData["Statistics"] as Dictionary<string, int>;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Thống kê hệ thống TOEIC</h1>
+    <p>Thời gian cập nhật: @ViewData["CurrentTime"]</p>
+
+    <div class="container mt-4">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Danh mục</th>
+                    <th>Số lượng</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (statistics != null)
+                {
+                    foreach (var item in statistics)
+                    {
+                        <tr>
+                            <td>@item.Key</td>
+                            <td>@item.Value</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="2">Không có dữ liệu thống kê.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

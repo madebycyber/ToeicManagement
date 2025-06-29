@@ -1,0 +1,333 @@
+﻿@{
+    ViewData["Title"] = "Chấm điểm thi TOEIC";
+    Layout = "_Layout"; // Assuming an admin layout exists
+}
+
+<main class="admin-main-content">
+    <div class="container main-content-body">
+        <!-- DANH SÁCH CHẤM ĐIỂM SECTION -->
+        <section id="danh-sach-cham-diem-section" class="filters-and-search-student card-ui-v2">
+            <h2>Danh sách chấm điểm</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Họ và tên học viên</th>
+                            <th>Mã học viên</th>
+                            <th>Điểm Listening</th>
+                            <th>Điểm Reading</th>
+                            <th>Tổng điểm</th>
+                            <th>Trình độ</th>
+                            <th>Ngày thi</th>
+                            <th>Hành động</th>
+                        </tr>
+                    </thead>
+                    <tbody id="danh-sach-cham-diem-table">
+                        <!-- Populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- CHI TIẾT CHẤM ĐIỂM SECTION -->
+        <section id="chi-tiet-cham-diem-section" class="filters-and-search-student card-ui-v2 hidden">
+            <h2>Chi tiết chấm điểm</h2>
+            <form id="chi-tiet-cham-diem-form">
+                <div class="form-group">
+                    <label for="ho-ten-hoc-vien"><strong>Họ và tên học viên:</strong></label>
+                    <span id="ho-ten-hoc-vien" class="read-only-label"></span>
+                </div>
+                <div class="form-group">
+                    <label for="ma-hoc-vien"><strong>Mã học viên:</strong></label>
+                    <span id="ma-hoc-vien" class="read-only-label"></span>
+                </div>
+                <div class="form-group">
+                    <label for="diem-part-1">Điểm Part 1 (Listening): *</label>
+                    <input type="number" id="diem-part-1" name="diemPart1" min="0" max="999" required placeholder="Nhập điểm">
+                </div>
+                <div class="form-group">
+                    <label for="diem-part-2">Điểm Part 2 (Listening): *</label>
+                    <input type="number" id="diem-part-2" name="diemPart2" min="0" max="999" required placeholder="Nhập điểm">
+                </div>
+                <div class="form-group">
+                    <label for="diem-part-3">Điểm Part 3 (Listening): *</label>
+                    <input type="number" id="diem-part-3" name="diemPart3" min="0" max="999" required placeholder="Nhập điểm">
+                </div>
+                <div class="form-group">
+                    <label for="diem-part-4">Điểm Part 4 (Listening): *</label>
+                    <input type="number" id="diem-part-4" name="diemPart4" min="0" max="999" required placeholder="Nhập điểm">
+                </div>
+                <div class="form-group">
+                    <label for="diem-part-5">Điểm Part 5 (Reading): *</label>
+                    <input type="number" id="diem-part-5" name="diemPart5" min="0" max="999" required placeholder="Nhập điểm">
+                </div>
+                <div class="form-group">
+                    <label for="diem-part-6">Điểm Part 6 (Reading): *</label>
+                    <input type="number" id="diem-part-6" name="diemPart6" min="0" max="999" required placeholder="Nhập điểm">
+                </div>
+                <div class="form-group">
+                    <label for="diem-part-7">Điểm Part 7 (Reading): *</label>
+                    <input type="number" id="diem-part-7" name="diemPart7" min="0" max="999" required placeholder="Nhập điểm">
+                </div>
+                <div class="form-group">
+                    <label for="tong-diem-listening"><strong>Tổng điểm Listening:</strong></label>
+                    <span id="tong-diem-listening" class="read-only-label"></span>
+                </div>
+                <div class="form-group">
+                    <label for="tong-diem-reading"><strong>Tổng điểm Reading:</strong></label>
+                    <span id="tong-diem-reading" class="read-only-label"></span>
+                </div>
+                <div class="form-group">
+                    <label for="tong-diem"><strong>Tổng điểm:</strong></label>
+                    <span id="tong-diem" class="read-only-label"></span>
+                </div>
+                <div class="form-group">
+                    <label for="trinh-do"><strong>Trình độ:</strong></label>
+                    <span id="trinh-do" class="read-only-label"></span>
+                </div>
+                <div class="form-group">
+                    <label for="ngay-thi"><strong>Ngày thi:</strong></label>
+                    <span id="ngay-thi" class="read-only-label"></span>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" id="luu-diem-btn" class="btn btn-primary btn-sm">Lưu điểm</button>
+                    <button type="button" id="huy-btn" class="btn btn-secondary btn-sm">Hủy</button>
+                    <button type="button" id="quay-lai-btn" class="btn btn-secondary btn-sm">Quay lại</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</main>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const danhSachChamDiemTable = document.getElementById('danh-sach-cham-diem-table');
+        const chiTietChamDiemSection = document.getElementById('chi-tiet-cham-diem-section');
+        const chiTietChamDiemForm = document.getElementById('chi-tiet-cham-diem-form');
+        const hoTenHocVien = document.getElementById('ho-ten-hoc-vien');
+        const maHocVien = document.getElementById('ma-hoc-vien');
+        const diemPart1Input = document.getElementById('diem-part-1');
+        const diemPart2Input = document.getElementById('diem-part-2');
+        const diemPart3Input = document.getElementById('diem-part-3');
+        const diemPart4Input = document.getElementById('diem-part-4');
+        const diemPart5Input = document.getElementById('diem-part-5');
+        const diemPart6Input = document.getElementById('diem-part-6');
+        const diemPart7Input = document.getElementById('diem-part-7');
+        const tongDiemListeningSpan = document.getElementById('tong-diem-listening');
+        const tongDiemReadingSpan = document.getElementById('tong-diem-reading');
+        const tongDiemSpan = document.getElementById('tong-diem');
+        const trinhDoSpan = document.getElementById('trinh-do');
+        const ngayThiSpan = document.getElementById('ngay-thi');
+        const luuDiemBtn = document.getElementById('luu-diem-btn');
+        const huyBtn = document.getElementById('huy-btn');
+        const quayLaiBtn = document.getElementById('quay-lai-btn');
+
+        let danhSachHocVien = []; // Store student grading data
+        let currentHocVienIndex = null; // Track the currently edited student
+
+        // Sample student grading data (for demo)
+        danhSachHocVien = [
+            {
+                idHocVien: 'HV001',
+                hoTen: 'Học sinh A',
+                diemPart1: 50,
+                diemPart2: 50,
+                diemPart3: 50,
+                diemPart4: 50,
+                diemPart5: 50,
+                diemPart6: 50,
+                diemPart7: 50,
+                ngayThi: '30/05/2025 03:52 AM'
+            },
+            {
+                idHocVien: 'HV002',
+                hoTen: 'Học sinh B',
+                diemPart1: 60,
+                diemPart2: 60,
+                diemPart3: 60,
+                diemPart4: 60,
+                diemPart5: 60,
+                diemPart6: 60,
+                diemPart7: 60,
+                ngayThi: '30/05/2025 03:52 AM'
+            }
+        ];
+
+        // Function to calculate scores and level
+        function tinhToanDiem() {
+            const diemPart1 = parseInt(diemPart1Input.value) || 0;
+            const diemPart2 = parseInt(diemPart2Input.value) || 0;
+            const diemPart3 = parseInt(diemPart3Input.value) || 0;
+            const diemPart4 = parseInt(diemPart4Input.value) || 0;
+            const diemPart5 = parseInt(diemPart5Input.value) || 0;
+            const diemPart6 = parseInt(diemPart6Input.value) || 0;
+            const diemPart7 = parseInt(diemPart7Input.value) || 0;
+
+            const tongDiemListening = diemPart1 + diemPart2 + diemPart3 + diemPart4;
+            const tongDiemReading = diemPart5 + diemPart6 + diemPart7;
+            const tongDiem = tongDiemListening + tongDiemReading;
+
+            let trinhDo = 'Beginner';
+            if (tongDiem >= 800) trinhDo = 'Advanced';
+            else if (tongDiem >= 600) trinhDo = 'Intermediate';
+            else if (tongDiem >= 400) trinhDo = 'Elementary';
+
+            tongDiemListeningSpan.textContent = tongDiemListening;
+            tongDiemReadingSpan.textContent = tongDiemReading;
+            tongDiemSpan.textContent = tongDiem;
+            trinhDoSpan.textContent = trinhDo;
+
+            return { diemPart1, diemPart2, diemPart3, diemPart4, diemPart5, diemPart6, diemPart7, tongDiem, trinhDo };
+        }
+
+        // Update table with student grading data
+        function capNhatDanhSachChamDiemTable() {
+            danhSachChamDiemTable.innerHTML = '';
+            danhSachHocVien.forEach((hv, index) => {
+                const tongDiemListening = hv.diemPart1 + hv.diemPart2 + hv.diemPart3 + hv.diemPart4;
+                const tongDiemReading = hv.diemPart5 + hv.diemPart6 + hv.diemPart7;
+                const tongDiem = tongDiemListening + tongDiemReading;
+                let trinhDo = 'Beginner';
+                if (tongDiem >= 800) trinhDo = 'Advanced';
+                else if (tongDiem >= 600) trinhDo = 'Intermediate';
+                else if (tongDiem >= 400) trinhDo = 'Elementary';
+
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                        <td>${hv.hoTen}</td>
+                        <td>${hv.idHocVien}</td>
+                        <td>${tongDiemListening}</td>
+                        <td>${tongDiemReading}</td>
+                        <td>${tongDiem}</td>
+                        <td>${trinhDo}</td>
+                        <td>${hv.ngayThi}</td>
+                        <td>
+                            <button class="btn btn-info btn-sm" onclick="xemChiTiet(${index})">Xem chi tiết</button>
+                            <button class="btn btn-warning btn-sm" onclick="suaDiem(${index})">Sửa điểm</button>
+                            <button class="btn btn-danger btn-sm" onclick="xoaKetQua(${index})">Xóa</button>
+                        </td>
+                    `;
+                danhSachChamDiemTable.appendChild(row);
+            });
+        }
+
+        capNhatDanhSachChamDiemTable();
+
+        // View details
+        window.xemChiTiet = (index) => {
+            currentHocVienIndex = index;
+            const hv = danhSachHocVien[index];
+            hoTenHocVien.textContent = hv.hoTen;
+            maHocVien.textContent = hv.idHocVien;
+            diemPart1Input.value = hv.diemPart1;
+            diemPart2Input.value = hv.diemPart2;
+            diemPart3Input.value = hv.diemPart3;
+            diemPart4Input.value = hv.diemPart4;
+            diemPart5Input.value = hv.diemPart5;
+            diemPart6Input.value = hv.diemPart6;
+            diemPart7Input.value = hv.diemPart7;
+            ngayThiSpan.textContent = hv.ngayThi;
+
+            const scores = tinhToanDiem();
+            tongDiemListeningSpan.textContent = scores.diemPart1 + scores.diemPart2 + scores.diemPart3 + scores.diemPart4;
+            tongDiemReadingSpan.textContent = scores.diemPart5 + scores.diemPart6 + scores.diemPart7;
+            tongDiemSpan.textContent = scores.tongDiem;
+            trinhDoSpan.textContent = scores.trinhDo;
+
+            diemPart1Input.disabled = true;
+            diemPart2Input.disabled = true;
+            diemPart3Input.disabled = true;
+            diemPart4Input.disabled = true;
+            diemPart5Input.disabled = true;
+            diemPart6Input.disabled = true;
+            diemPart7Input.disabled = true;
+            luuDiemBtn.style.display = 'none';
+
+            chiTietChamDiemSection.classList.remove('hidden');
+        };
+
+        // Edit scores
+        window.suaDiem = (index) => {
+            currentHocVienIndex = index;
+            const hv = danhSachHocVien[index];
+            hoTenHocVien.textContent = hv.hoTen;
+            maHocVien.textContent = hv.idHocVien;
+            diemPart1Input.value = hv.diemPart1;
+            diemPart2Input.value = hv.diemPart2;
+            diemPart3Input.value = hv.diemPart3;
+            diemPart4Input.value = hv.diemPart4;
+            diemPart5Input.value = hv.diemPart5;
+            diemPart6Input.value = hv.diemPart6;
+            diemPart7Input.value = hv.diemPart7;
+            ngayThiSpan.textContent = hv.ngayThi;
+
+            const scores = tinhToanDiem();
+            tongDiemListeningSpan.textContent = scores.diemPart1 + scores.diemPart2 + scores.diemPart3 + scores.diemPart4;
+            tongDiemReadingSpan.textContent = scores.diemPart5 + scores.diemPart6 + scores.diemPart7;
+            tongDiemSpan.textContent = scores.tongDiem;
+            trinhDoSpan.textContent = scores.trinhDo;
+
+            diemPart1Input.disabled = false;
+            diemPart2Input.disabled = false;
+            diemPart3Input.disabled = false;
+            diemPart4Input.disabled = false;
+            diemPart5Input.disabled = false;
+            diemPart6Input.disabled = false;
+            diemPart7Input.disabled = false;
+            luuDiemBtn.style.display = 'block';
+
+            chiTietChamDiemSection.classList.remove('hidden');
+        };
+
+        // Delete result
+        window.xoaKetQua = (index) => {
+            if (confirm('Bạn có chắc chắn muốn xóa kết quả này?')) {
+                danhSachHocVien.splice(index, 1);
+                capNhatDanhSachChamDiemTable();
+                alert('Kết quả đã được xóa.');
+            }
+        };
+
+        // Real-time score calculation
+        diemPart1Input.addEventListener('input', tinhToanDiem);
+        diemPart2Input.addEventListener('input', tinhToanDiem);
+        diemPart3Input.addEventListener('input', tinhToanDiem);
+        diemPart4Input.addEventListener('input', tinhToanDiem);
+        diemPart5Input.addEventListener('input', tinhToanDiem);
+        diemPart6Input.addEventListener('input', tinhToanDiem);
+        diemPart7Input.addEventListener('input', tinhToanDiem);
+
+        // Save scores
+        chiTietChamDiemForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (currentHocVienIndex !== null) {
+                const scores = tinhToanDiem();
+                const hv = danhSachHocVien[currentHocVienIndex];
+                hv.diemPart1 = scores.diemPart1;
+                hv.diemPart2 = scores.diemPart2;
+                hv.diemPart3 = scores.diemPart3;
+                hv.diemPart4 = scores.diemPart4;
+                hv.diemPart5 = scores.diemPart5;
+                hv.diemPart6 = scores.diemPart6;
+                hv.diemPart7 = scores.diemPart7;
+
+                alert(`Đã lưu điểm cho ${hv.hoTen}: ${scores.tongDiem}`);
+                chiTietChamDiemSection.classList.add('hidden');
+                capNhatDanhSachChamDiemTable();
+            }
+        });
+
+        // Cancel editing
+        huyBtn.addEventListener('click', () => {
+            chiTietChamDiemSection.classList.add('hidden');
+            currentHocVienIndex = null;
+        });
+
+        // Go back
+        quayLaiBtn.addEventListener('click', () => {
+            chiTietChamDiemSection.classList.add('hidden');
+            currentHocVienIndex = null;
+        });
+    });
+</script>

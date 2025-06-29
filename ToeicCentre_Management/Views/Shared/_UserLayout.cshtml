@@ -1,0 +1,146 @@
+﻿@{
+    ViewData["Title"] = "MTA TOEIC HVKTQS";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/frontend/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- SwiperJS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="site-header-student">
+        <div class="container header-container-student">
+            <a href="#" class="site-logo-student">
+                <img src="~/frontend/Logo_MTA_new.png" class="header-logo-img">
+                <span>MTA <strong>TOEIC</strong></span>
+            </a>
+            <nav class="site-nav-student" id="siteNavStudent">
+                <a href="@Url.Action("Index", "Home")">Trang chủ</a>
+                <a href="@Url.Action("Index", "UserToeicPractice")">Luyện thi</a>
+                <a href="@Url.Action("Index", "LearningMaterial")">Tài liệu</a>
+                <a href="@Url.Action("Index", "Forum")">Diễn đàn</a>
+                <a href="#" class="user-account-link">
+                    <img src="~/frontend/lanh.jpg" alt="Avatar" class="user-avatar-student-nav">
+                    <span>Tài khoản</span>
+                </a>
+            </nav>
+            <button class="mobile-nav-toggle" id="mobileNavToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main class="student-main-content">
+        <div class="container main-content-body">
+            <!-- HERO SLIDER SECTION -->
+            <section class="hero-slider-section">
+                <div class="swiper hero-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1280&q=80&blur=5')">
+                            <div class="slide-overlay"></div>
+                            <div class="slide-content">
+                                <h1>Chinh phục TOEIC cùng HVKTQS</h1>
+                                <p>Nguồn tài liệu luyện thi toàn diện, bám sát cấu trúc đề thi mới nhất.</p>
+                                <a href="#content-section" class="btn btn-primary-v2 btn-slide">Khám phá ngay</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=1280&q=80&blur=5')">
+                            <div class="slide-overlay"></div>
+                            <div class="slide-content">
+                                <h1>Luyện nghe & Đọc hiểu đỉnh cao</h1>
+                                <p>Video bài giảng chi tiết, bài tập đa dạng từ các chuyên gia hàng đầu.</p>
+                                <a href="#content-section" class="btn btn-primary-v2 btn-slide">Bắt đầu học ngay</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1280&q=80&blur=5')">
+                            <div class="slide-overlay"></div>
+                            <div class="slide-content">
+                                <h1>Từ vựng & Ngữ pháp vững chắc</h1>
+                                <p>Củng cố nền tảng kiến thức để tự tin đạt điểm số mục tiêu.</p>
+                                <a href="#content-section" class="btn btn-primary-v2 btn-slide">Tìm tài liệu cần thiết</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url('slider_hocvien.jpeg')">
+                            <div class="slide-content"></div>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url('slider_gp.png')">
+                            <div class="slide-content"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination hero-swiper-pagination"></div>
+                    <div class="swiper-button-prev hero-swiper-button-prev"></div>
+                    <div class="swiper-button-next hero-swiper-button-next"></div>
+                </div>
+            </section>
+
+            <section id="content-section">
+                @RenderBody()
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer-pro">
+        <div class="footer-main">
+            <div class="container footer-main-container">
+                <div class="footer-column footer-about">
+                    <h3 class="footer-logo">HỌC VIỆN KỸ THUẬT QUÂN SỰ</h3>
+                    <p class="footer-subtitle">Đại học Kỹ thuật Lê Quý Đôn</p>
+                    <p class="footer-address">
+                        <i class="fas fa-map-marker-alt"></i> 236 Hoàng Quốc Việt, Hà Nội, Việt Nam
+                    </p>
+                </div>
+                <div class="footer-column footer-links">
+                    <h4>Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-caret-right"></i> Các Khoa</a></li>
+                        <li><a href="#"><i class="fas fa-caret-right"></i> Viện/Trung tâm</a></li>
+                        <li><a href="#"><i class="fas fa-caret-right"></i> Các Phòng/Ban</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-connect">
+                    <h4>Kết nối với chúng tôi</h4>
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i> Linkedin</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-youtube"></i> Youtube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-visitors">
+                    <h4>Lượt truy cập</h4>
+                    <a href="https://info.flagcounter.com/Ybt4"><img src="https://s11.flagcounter.com/count2/Ybt4/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_8/viewers_Visitors/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>© 2025 Đại học Kỹ thuật Lê Quý Đôn. Bản quyền thuộc về Học viện.</p>
+                <a href="#" id="scrollToTopBtn" class="scroll-to-top" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal-overlay hidden" id="student-modal-overlay"></div>
+    <div class="modal hidden" id="student-material-detail-modal">
+        <div class="modal-header">
+            <h2 id="student-material-detail-modal-title">Chi tiết Tài liệu</h2>
+            <button class="close-button" id="student-close-detail-modal-btn">×</button>
+        </div>
+        <div class="modal-body" id="student-material-detail-modal-body">
+            <p>Đang tải chi tiết...</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary-v2" id="student-close-detail-modal-footer-btn">Đóng</button>
+        </div>
+    </div>
+
+    <!-- SwiperJS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="~/frontend/script.js"></script>
+</body>
+</html>

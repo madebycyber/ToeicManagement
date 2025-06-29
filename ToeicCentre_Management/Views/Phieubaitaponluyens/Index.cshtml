@@ -1,0 +1,276 @@
+﻿@model List<ToeicCentre_Management.Models.Phieubaitaponluyen>
+
+@{
+    ViewData["Title"] = "Ôn luyện thi TOEIC";
+    Layout = "_Layout";
+}
+
+<div id="toeic-practice-content">
+    <header class="page-header content-header">
+        <h1><span class="header-icon">📚</span>Ôn luyện thi TOEIC</h1>
+    </header>
+
+    <div id="content-wrapper">
+        <!-- Teacher Section: Create and Assign Test -->
+        <div id="teacher-section" class="card">
+            <h2>Giáo viên: Tạo và Giao bài ôn luyện</h2>
+            <div id="create-test-view">
+                <h3>Tạo phiếu bài tập ôn luyện</h3>
+                <form id="create-test-form" asp-action="Create" method="post">
+                    <div class="form-group">
+                        <label for="maSv">Mã sinh viên: *</label>
+                        <select id="maSv" name="MaSv" class="form-control" required>
+                            <option value="">-- Chọn sinh viên --</option>
+                            @foreach (var sinhvien in ViewBag.Sinhviens)
+                            {
+                                <option value="@sinhvien.MaSv">@sinhvien.HoTen</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="lop">Lớp: *</label>
+                        <input type="text" id="lop" name="Lop" class="form-control" required placeholder="VD: CNTT01">
+                    </div>
+                    <div class="form-group">
+                        <label for="dangCauHoi">Dạng câu hỏi: *</label>
+                        <select id="dangCauHoi" name="DangCauHoi" class="form-control" required>
+                            <option value="">-- Chọn dạng câu hỏi --</option>
+                            <option value="Listening">Listening</option>
+                            <option value="Reading">Reading</option>
+                            <option value="Full">Full Test</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="thoiGianGiao">Thời gian giao: *</label>
+                        <input type="datetime-local" id="thoiGianGiao" name="ThoiGianGiao" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="thoiGianNop">Thời gian nộp: *</label>
+                        <input type="datetime-local" id="thoiGianNop" name="ThoiGianNop" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="diemSo">Điểm số:</label>
+                        <input type="number" id="diemSo" name="DiemSo" class="form-control" step="1" placeholder="VD: 85">
+                    </div>
+                    <div class="form-group">
+                        <label for="nhanXet">Nhận xét:</label>
+                        <textarea id="nhanXet" name="NhanXet" class="form-control" placeholder="Nhận xét về bài làm"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="cauHoiIds">Chọn câu hỏi: *</label>
+                        <select id="cauHoiIds" name="CauHoiIds" class="form-control" multiple required>
+                            @foreach (var cauhoi in ViewBag.CauHois)
+                            {
+                                <option value="@cauhoi.MaCh">@cauhoi.MaCh - @cauhoi.NdCauHoi</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                        <button type="submit" class="btn btn-success">Tạo phiếu</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Table of Practice Tests -->
+            <div id="grade-test-view" class="mt-4">
+                <h3>Danh sách phiếu bài tập ôn luyện</h3>
+                <div class="table-container">
+                    <table class="table table-bordered table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Mã phiếu</th>
+                                <th>Sinh viên</th>
+                                <th>Lớp</th>
+                                <th>Dạng câu hỏi</th>
+                                <th>Thời gian giao</th>
+                                <th>Thời gian nộp</th>
+                                <th>Điểm số</th>
+                                <th>Nhận xét</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.IdPhieuBaiTap</td>
+                                    <td>@item.MaSvNavigation?.HoTenSv (@item.MaSv)</td>
+                                    <td>@item.Lop</td>
+                                    <td>@item.DangCauHoi</td>
+                                    <td>@item.ThoiGianGiao?.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td>@item.ThoiGianNop?.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td>@item.DiemSo</td>
+                                    <td>@item.NhanXet</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#detailsModal-@item.IdPhieuBaiTap">Xem chi tiết</button>
+                                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal-@item.IdPhieuBaiTap">Sửa</button>
+                                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal-@item.IdPhieuBaiTap">Xóa</button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Details Modal -->
+    @foreach (var item in Model)
+    {
+        <div class="modal fade" id="detailsModal-@item.IdPhieuBaiTap" tabindex="-1" aria-labelledby="detailsModalLabel-@item.IdPhieuBaiTap" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="detailsModalLabel-@item.IdPhieuBaiTap">Chi tiết phiếu bài tập #@item.IdPhieuBaiTap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Mã phiếu:</strong> @item.IdPhieuBaiTap</p>
+                        <p><strong>Sinh viên:</strong> @item.MaSvNavigation?.HoTenSv (@item.MaSv)</p>
+                        <p><strong>Lớp:</strong> @item.Lop</p>
+                        <p><strong>Dạng câu hỏi:</strong> @item.DangCauHoi</p>
+                        <p><strong>Thời gian giao:</strong> @item.ThoiGianGiao?.ToString("dd/MM/yyyy HH:mm")</p>
+                        <p><strong>Thời gian nộp:</strong> @item.ThoiGianNop?.ToString("dd/MM/yyyy HH:mm")</p>
+                        <p><strong>Điểm số:</strong> @item.DiemSo</p>
+                        <p><strong>Nhận xét:</strong> @item.NhanXet</p>
+                        <p><strong>Câu hỏi liên kết:</strong></p>
+                        <ul>
+                            @foreach (var cauhoi in item.Cauhoibaitaps)
+                            {
+                                if (cauhoi.MaChNavigation != null)
+                                {
+                                    <li>@cauhoi.MaChNavigation.NdCauHoi</li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Modal -->
+        <div class="modal fade" id="editModal-@item.IdPhieuBaiTap" tabindex="-1" aria-labelledby="editModalLabel-@item.IdPhieuBaiTap" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editModalLabel-@item.IdPhieuBaiTap">Sửa phiếu bài tập #@item.IdPhieuBaiTap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form asp-action="Edit" method="post">
+                            <input type="hidden" name="IdPhieuBaiTap" value="@item.IdPhieuBaiTap" />
+                            <div class="form-group">
+                                <label for="maSv-@item.IdPhieuBaiTap">Mã sinh viên: *</label>
+                                <select id="maSv-@item.IdPhieuBaiTap" name="MaSv" class="form-control" required>
+                                    @foreach (var sinhvien in ViewBag.Sinhviens)
+                                    {
+                                        <option value="@sinhvien.MaSv" selected="@(sinhvien.MaSv == item.MaSv ? "selected" : "")">@sinhvien.HoTen</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="lop-@item.IdPhieuBaiTap">Lớp: *</label>
+                                <input type="text" id="lop-@item.IdPhieuBaiTap" name="Lop" class="form-control" value="@item.Lop" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dangCauHoi-@item.IdPhieuBaiTap">Dạng câu hỏi: *</label>
+                                <select id="dangCauHoi-@item.IdPhieuBaiTap" name="DangCauHoi" class="form-control" required>
+                                    <option value="Listening" selected="@(item.DangCauHoi == "Listening" ? "selected" : "")">Listening</option>
+                                    <option value="Reading" selected="@(item.DangCauHoi == "Reading" ? "selected" : "")">Reading</option>
+                                    <option value="Full" selected="@(item.DangCauHoi == "Full" ? "selected" : "")">Full Test</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="thoiGianGiao-@item.IdPhieuBaiTap">Thời gian giao: *</label>
+                                <input type="datetime-local" id="thoiGianGiao-@item.IdPhieuBaiTap" name="ThoiGianGiao" class="form-control" value="@item.ThoiGianGiao?.ToString("yyyy-MM-ddTHH:mm")" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="thoiGianNop-@item.IdPhieuBaiTap">Thời gian nộp: *</label>
+                                <input type="datetime-local" id="thoiGianNop-@item.IdPhieuBaiTap" name="ThoiGianNop" class="form-control" value="@item.ThoiGianNop?.ToString("yyyy-MM-ddTHH:mm")" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="diemSo-@item.IdPhieuBaiTap">Điểm số:</label>
+                                <input type="number" id="diemSo-@item.IdPhieuBaiTap" name="DiemSo" class="form-control" step="1" value="@item.DiemSo">
+                            </div>
+                            <div class="form-group">
+                                <label for="nhanXet-@item.IdPhieuBaiTap">Nhận xét:</label>
+                                <textarea id="nhanXet-@item.IdPhieuBaiTap" name="NhanXet" class="form-control">@item.NhanXet</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="cauHoiIds-@item.IdPhieuBaiTap">Chọn câu hỏi: *</label>
+                                <select id="cauHoiIds-@item.IdPhieuBaiTap" name="CauHoiIds" class="form-control" multiple required>
+                                    @{
+                                        var selectedIds = ViewBag.SelectedCauHoiIds.ContainsKey(item.IdPhieuBaiTap) ? ViewBag.SelectedCauHoiIds[item.IdPhieuBaiTap] : new List<int?>();
+                                    }
+                                    @foreach (var cauhoi in ViewBag.CauHois)
+                                    {
+                                        <option value="@cauhoi.MaCh" selected="@(selectedIds.Contains(cauhoi.MaCh) ? "selected" : "")">@cauhoi.MaCh - @cauhoi.NdCauHoi</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                                <button type="submit" class="btn btn-success">Lưu thay đổi</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Modal -->
+        <div class="modal fade" id="deleteModal-@item.IdPhieuBaiTap" tabindex="-1" aria-labelledby="deleteModalLabel-@item.IdPhieuBaiTap" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteModalLabel-@item.IdPhieuBaiTap">Xóa phiếu bài tập #@item.IdPhieuBaiTap</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có chắc muốn xóa phiếu bài tập #@item.IdPhieuBaiTap cho sinh viên @item.MaSvNavigation?.HoTenSv?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                        <form asp-action="Delete" asp-route-id="@item.IdPhieuBaiTap" method="post">
+                            <input type="hidden" name="id" value="@item.IdPhieuBaiTap" />
+                            <button type="submit" class="btn btn-danger">Xóa</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Handle form submission via AJAX
+        document.getElementById('create-test-form').addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const form = this;
+            const formData = new FormData(form);
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    }
+                });
+                if (response.ok) {
+                    window.location.reload();
+                } else {
+                    alert('Lỗi khi tạo phiếu bài tập!');
+                }
+            } catch (error) {
+                alert('Lỗi mạng: ' + error.message);
+            }
+        });
+    </script>
+}
