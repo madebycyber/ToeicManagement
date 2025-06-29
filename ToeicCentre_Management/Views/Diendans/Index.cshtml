@@ -1,0 +1,178 @@
+﻿@model IEnumerable<ToeicCentre_Management.Models.Diendan>
+
+@{
+    ViewData["Title"] = "Quản lý Diễn đàn";
+    Layout = "_Layout";
+}
+
+<div id="forum-management-content">
+    <header class="page-header content-header">
+        <h1><span class="header-icon">💬</span>Quản lý Diễn đàn</h1>
+    </header>
+
+    <div id="content-wrapper">
+        <!-- Filter and Search Section -->
+        <div class="filter-section card">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="search-container">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm diễn đàn..." style="width: 300px;">
+                </div>
+                <div class="filter-controls">
+                    <select id="statusFilter" class="form-control me-2" style="width: 150px;">
+                        <option value="">Tất cả</option>
+                        <option value="Chờ duyệt">Chờ duyệt</option>
+                        <option value="Đã duyệt">Đã duyệt</option>
+                        <option value="Từ chối">Từ chối</option>
+                    </select>
+                    <a asp-action="Create" class="btn btn-success">
+                        <i class="fas fa-plus"></i> Thêm mới diễn đàn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forum Management Table -->
+        <div class="card">
+            <div class="table-container">
+                <table class="table table-bordered table-striped" id="forumTable">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th style="width: 50px;">STT</th>
+                            <th style="width: 250px;">Tiêu đề</th>
+                            <th style="width: 120px;">Trạng thái</th>
+                            <th style="width: 150px;">Người tạo</th>
+                            <th style="width: 100px;">Số bài viết</th>
+                            <th style="width: 120px;">Hành động hệ thống</th>
+                            <th style="width: 200px;">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int stt = 1;
+                        }
+                        @foreach (var item in Model)
+                        {
+                            <tr data-status="@item.TrangThai" data-title="@item.TieuDe?.ToLower()">
+                                <td>@stt</td>
+                                <td>
+                                    <strong>@item.TieuDe</strong>
+                                    @if (!string.IsNullOrEmpty(item.GhiChu))
+                                    {
+                                        <br>
+
+                                        <small class="text-muted">@item.GhiChu</small>
+                                    }
+                                </td>
+                                <td>
+                                    @if (item.TrangThai == "Chờ duyệt")
+                                    {
+                                        <span class="badge bg-warning">Chờ duyệt</span>
+                                    }
+                                    else if (item.TrangThai == "Đã duyệt")
+                                    {
+                                        <span class="badge bg-success">Đã duyệt</span>
+                                    }
+                                    else if (item.TrangThai == "Từ chối")
+                                    {
+                                        <span class="badge bg-danger">Từ chối</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary">@item.TrangThai</span>
+                                    }
+                                </td>
+                                <td>@item.NguoiTao</td>
+                                <td>
+                                    <span class="badge bg-info">@item.SoBaiViet</span>
+                                </td>
+                                <td>
+                                    @if (item.HanhDong == "Mở")
+                                    {
+                                        <span class="badge bg-success">Mở</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-secondary">Đóng</span>
+                                    }
+                                </td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="Details" asp-route-id="@item.MaDd" class="btn btn-primary btn-sm" title="Xem chi tiết">
+                                            Xem chi tiết
+                                        </a>
+                                        <a asp-action="Edit" asp-route-id="@item.MaDd" class="btn btn-warning btn-sm" title="Chỉnh sửa">
+                                            Sửa
+                                        </a>
+                                        <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal-@item.MaDd" title="Xóa">
+                                            Xóa
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                            stt++;
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modals -->
+    @foreach (var item in Model)
+    {
+        <div class="modal fade" id="deleteModal-@item.MaDd" tabindex="-1" aria-labelledby="deleteModalLabel-@item.MaDd" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteModalLabel-@item.MaDd">Xác nhận xóa</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Bạn có chắc chắn muốn xóa diễn đàn <strong>"@item.TieuDe"</strong>?</p>
+                        <p class="text-danger"><small>Hành động này không thể hoàn tác!</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                        <form asp-action="Delete" asp-route-id="@item.MaDd" method="post" style="display: inline;">
+                            <button type="submit" class="btn btn-danger">Xóa</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        // Search and filter functionality
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            filterTable();
+        });
+
+        document.getElementById('statusFilter').addEventListener('change', function() {
+            filterTable();
+        });
+
+        function filterTable() {
+            const searchValue = document.getElementById('searchInput').value.toLowerCase();
+            const statusValue = document.getElementById('statusFilter').value;
+            const rows = document.querySelectorAll('#forumTable tbody tr');
+
+            rows.forEach(row => {
+                const title = row.getAttribute('data-title') || '';
+                const status = row.getAttribute('data-status') || '';
+
+                const matchesSearch = title.includes(searchValue);
+                const matchesStatus = statusValue === '' || status === statusValue;
+
+                if (matchesSearch && matchesStatus) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+    </script>
+}

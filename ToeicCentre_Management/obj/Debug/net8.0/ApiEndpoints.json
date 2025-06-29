@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "ToeicCentre_Management.Controllers.QuestionsApiController",
+    "Method": "GetQuestionDetails",
+    "RelativePath": "api/questions/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToeicCentre_Management.Controllers.QuestionsApiController",
+    "Method": "DeleteQuestion",
+    "RelativePath": "api/questions/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToeicCentre_Management.Controllers.QuestionsApiController",
+    "Method": "GetClassification",
+    "RelativePath": "api/questions/{id}/classification",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToeicCentre_Management.Controllers.QuestionsApiController",
+    "Method": "ApproveQuestion",
+    "RelativePath": "api/questions/approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ToeicCentre_Management.Controllers.QuestionsApiController\u002BApprovalModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ToeicCentre_Management.Controllers.QuestionsApiController",
+    "Method": "ClassifyQuestion",
+    "RelativePath": "api/questions/classify",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ToeicCentre_Management.Controllers.QuestionsApiController\u002BClassificationModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

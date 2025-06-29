@@ -7596,19 +7596,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ACER USER\\.nuget\\packages\\": {}
+    "C:\\Users\\ductr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\ToeicCentre_Management.csproj",
+      "projectUniqueName": "D:\\DucTrung\\HVKTQS\\LuckyBoiz\\NAM4KI2\\7.THUCTAPCNTT\\Code\\ToeicManagement\\ToeicCentre_Management\\ToeicCentre_Management.csproj",
       "projectName": "ToeicCentre_Management",
-      "projectPath": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\ToeicCentre_Management.csproj",
-      "packagesPath": "C:\\Users\\ACER USER\\.nuget\\packages\\",
-      "outputPath": "E:\\Tai lieu hoc tap\\Kì 2 năm 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\obj\\",
+      "projectPath": "D:\\DucTrung\\HVKTQS\\LuckyBoiz\\NAM4KI2\\7.THUCTAPCNTT\\Code\\ToeicManagement\\ToeicCentre_Management\\ToeicCentre_Management.csproj",
+      "packagesPath": "C:\\Users\\ductr\\.nuget\\packages\\",
+      "outputPath": "D:\\DucTrung\\HVKTQS\\LuckyBoiz\\NAM4KI2\\7.THUCTAPCNTT\\Code\\ToeicManagement\\ToeicCentre_Management\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ACER USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ductr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7616,6 +7621,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7633,7 +7639,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -7671,6 +7678,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+            "version": "[9.0.203, 9.0.203]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7679,7 +7692,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

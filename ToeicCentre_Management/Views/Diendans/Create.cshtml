@@ -1,0 +1,175 @@
+﻿@model ToeicCentre_Management.ViewModels.DienDanCreateViewModel
+
+@{
+    ViewData["Title"] = "Thêm mới diễn đàn";
+    Layout = "_Layout";
+}
+
+<div id="forum-create-content">
+    <header class="page-header content-header">
+        <h1><span class="header-icon">➕</span>Thêm mới diễn đàn</h1>
+    </header>
+
+    <div id="content-wrapper">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Thông tin diễn đàn</h3>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Create" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label asp-for="TieuDe" class="form-label"></label>
+                                    <input asp-for="TieuDe" class="form-control" placeholder="Nhập tiêu đề diễn đàn">
+                                    <span asp-validation-for="TieuDe" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label asp-for="NguoiTao" class="form-label"></label>
+                                    <input asp-for="NguoiTao" class="form-control" placeholder="Tên người tạo">
+                                    <span asp-validation-for="NguoiTao" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label asp-for="TenNguoiTao" class="form-label">Tên đầy đủ người đề nghị</label>
+                                    <input asp-for="TenNguoiTao" class="form-control" placeholder="Họ tên đầy đủ">
+                                    <span asp-validation-for="TenNguoiTao" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label asp-for="MucDich" class="form-label"></label>
+                                    <input asp-for="MucDich" class="form-control" placeholder="Mục đích tạo diễn đàn">
+                                    <span asp-validation-for="MucDich" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="NoiDung" class="form-label"></label>
+                                <textarea asp-for="NoiDung" class="form-control" rows="4" placeholder="Mô tả chi tiết nội dung diễn đàn"></textarea>
+                                <span asp-validation-for="NoiDung" class="text-danger"></span>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label asp-for="HinhThucTrienKhai" class="form-label"></label>
+                                    <select asp-for="HinhThucTrienKhai" class="form-control">
+                                        <option value="">-- Chọn hình thức --</option>
+                                        <option value="Trực tuyến">Trực tuyến</option>
+                                        <option value="Trực tiếp">Trực tiếp</option>
+                                        <option value="Kết hợp">Kết hợp</option>
+                                    </select>
+                                    <span asp-validation-for="HinhThucTrienKhai" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label asp-for="LoiIchKyVong" class="form-label"></label>
+                                    <input asp-for="LoiIchKyVong" class="form-control" placeholder="Lợi ích kỳ vọng">
+                                    <span asp-validation-for="LoiIchKyVong" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="GhiChu" class="form-label"></label>
+                                <textarea asp-for="GhiChu" class="form-control" rows="3" placeholder="Ghi chú thêm (nếu có)"></textarea>
+                                <span asp-validation-for="GhiChu" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-actions">
+                                <a asp-action="Index" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-left"></i> Quay lại
+                                </a>
+                                <button type="submit" class="btn btn-success">
+                                    <i class="fas fa-save"></i> Lưu & Gửi duyệt
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Chọn bài viết</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="dropdown">
+                            <button class="btn btn-outline-primary dropdown-toggle w-100" type="button" id="dropdownBaiViet" data-bs-toggle="dropdown" aria-expanded="false">
+                                -- Chọn bài viết --
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownBaiViet" style="max-height: 300px; overflow-y: auto;">
+                                @foreach (var baiviet in Model.Baiviets)
+                                {
+                                    <li>
+                                        <div class="form-check dropdown-item-text">
+                                            <input class="form-check-input" type="checkbox" name="SelectedBaiviets" value="@baiviet.Value" id="bv-@baiviet.Value">
+                                            <label class="form-check-label" for="bv-@baiviet.Value">
+                                                @baiviet.Text
+                                            </label>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+
+                        <div class="selected-articles mt-3">
+                            <h6>Bài viết đã chọn:</h6>
+                            <div id="selectedArticlesList" class="text-muted">
+                                <em>Chưa chọn bài viết nào</em>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h3>Lưu ý</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-info-circle text-info"></i> Điền đầy đủ thông tin để tạo đơn đề nghị</li>
+                            <li><i class="fas fa-eye text-warning"></i> Bạn sẽ xem trước đơn đề nghị trước khi submit</li>
+                            <li><i class="fas fa-clock text-secondary"></i> Diễn đàn sẽ ở trạng thái "Chờ duyệt" sau khi tạo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Handle article selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = document.querySelectorAll('input[name="SelectedBaiviets"]');
+            const selectedList = document.getElementById('selectedArticlesList');
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    updateSelectedArticles();
+                });
+            });
+
+            function updateSelectedArticles() {
+                const selected = Array.from(checkboxes)
+                    .filter(cb => cb.checked)
+                    .map(cb => cb.nextElementSibling.textContent.trim());
+
+                if (selected.length === 0) {
+                    selectedList.innerHTML = '<em class="text-muted">Chưa chọn bài viết nào</em>';
+                } else {
+                    selectedList.innerHTML = selected.map(article =>
+                        `<span class="badge bg-primary me-1 mb-1">${article}</span>`
+                    ).join('');
+                }
+            }
+        });
+    </script>
+}

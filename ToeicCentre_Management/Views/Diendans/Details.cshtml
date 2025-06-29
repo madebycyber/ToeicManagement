@@ -1,0 +1,270 @@
+﻿@model ToeicCentre_Management.Models.Diendan
+
+@{
+    ViewData["Title"] = "Chi tiết diễn đàn";
+    Layout = "_Layout";
+}
+
+<div id="forum-details-content">
+    <header class="page-header content-header">
+        <h1><span class="header-icon">👁️</span>Chi tiết diễn đàn</h1>
+    </header>
+
+    <div id="content-wrapper">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h3>@Model.TieuDe</h3>
+                        <div>
+                            @if (Model.TrangThai == "Chờ duyệt")
+                            {
+                                <span class="badge bg-warning fs-6">Chờ duyệt</span>
+                            }
+                            else if (Model.TrangThai == "Đã duyệt")
+                            {
+                                <span class="badge bg-success fs-6">Đã duyệt</span>
+                            }
+                            else if (Model.TrangThai == "Từ chối")
+                            {
+                                <span class="badge bg-danger fs-6">Từ chối</span>
+                            }
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-3">Mã diễn đàn:</dt>
+                            <dd class="col-sm-9"><span class="badge bg-primary">#@Model.MaDd</span></dd>
+
+                            <dt class="col-sm-3">Tiêu đề:</dt>
+                            <dd class="col-sm-9">@Model.TieuDe</dd>
+
+                            <dt class="col-sm-3">Người tạo:</dt>
+                            <dd class="col-sm-9">@Model.NguoiTao</dd>
+
+                            <dt class="col-sm-3">Số bài viết:</dt>
+                            <dd class="col-sm-9">
+                                <span class="badge bg-info">@Model.SoBaiViet bài viết</span>
+                            </dd>
+
+                            <dt class="col-sm-3">Trạng thái:</dt>
+                            <dd class="col-sm-9">
+                                @if (Model.TrangThai == "Chờ duyệt")
+                                {
+                                    <span class="badge bg-warning">Chờ duyệt</span>
+                                }
+                                else if (Model.TrangThai == "Đã duyệt")
+                                {
+                                    <span class="badge bg-success">Đã duyệt</span>
+                                }
+                                else if (Model.TrangThai == "Từ chối")
+                                {
+                                    <span class="badge bg-danger">Từ chối</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">@Model.TrangThai</span>
+                                }
+                            </dd>
+
+                            <dt class="col-sm-3">Hành động:</dt>
+                            <dd class="col-sm-9">
+                                @if (Model.HanhDong == "Mở")
+                                {
+                                    <span class="badge bg-success">Mở</span>
+                                    <small class="text-muted">- Cho phép thêm bài viết mới</small>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">Đóng</span>
+                                    <small class="text-muted">- Không cho phép thêm bài viết mới</small>
+                                }
+                            </dd>
+
+                            @if (!string.IsNullOrEmpty(Model.GhiChu))
+                            {
+                                <dt class="col-sm-3">Ghi chú:</dt>
+                                <dd class="col-sm-9">@Model.GhiChu</dd>
+                            }
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- Đơn đề nghị gốc -->
+                @if (Model.MaDdnNavigation != null)
+                {
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            <h4>Đơn đề nghị gốc</h4>
+                        </div>
+                        <div class="card-body">
+                            <dl class="row">
+                                <dt class="col-sm-3">Người đề nghị:</dt>
+                                <dd class="col-sm-9">@Model.MaDdnNavigation.TenNguoiDn</dd>
+
+                                <dt class="col-sm-3">Chức vụ:</dt>
+                                <dd class="col-sm-9">@Model.MaDdnNavigation.ChucVu</dd>
+
+                                <dt class="col-sm-3">Đơn vị:</dt>
+                                <dd class="col-sm-9">@Model.MaDdnNavigation.DonVi</dd>
+
+                                <dt class="col-sm-3">Ngày viết đơn:</dt>
+                                <dd class="col-sm-9">@Model.MaDdnNavigation.NgayVietDon?.ToString("dd/MM/yyyy")</dd>
+
+                                <dt class="col-sm-3">Mục đích:</dt>
+                                <dd class="col-sm-9">@Model.MaDdnNavigation.MucDich</dd>
+
+                                @if (!string.IsNullOrEmpty(Model.MaDdnNavigation.NoiDung))
+                                {
+                                    <dt class="col-sm-3">Nội dung:</dt>
+                                    <dd class="col-sm-9">
+                                        <div class="border p-3 bg-light">
+                                            @Model.MaDdnNavigation.NoiDung
+                                        </div>
+                                    </dd>
+                                }
+
+                                <dt class="col-sm-3">Hình thức:</dt>
+                                <dd class="col-sm-9">@Model.MaDdnNavigation.HinhThucTrienKhai</dd>
+
+                                @if (!string.IsNullOrEmpty(Model.MaDdnNavigation.LoiIchKyVong))
+                                {
+                                    <dt class="col-sm-3">Lợi ích kỳ vọng:</dt>
+                                    <dd class="col-sm-9">
+                                        <div class="border p-3 bg-light">
+                                            @Model.MaDdnNavigation.LoiIchKyVong
+                                        </div>
+                                    </dd>
+                                }
+                            </dl>
+                        </div>
+                    </div>
+                }
+
+                <!-- Danh sách bài viết -->
+                @if (Model.Baiviets.Any())
+                {
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            <h4>Bài viết trong diễn đàn</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã bài viết</th>
+                                            <th>Tiêu đề</th>
+                                            <th>Nội dung</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var baiviet in Model.Baiviets)
+                                        {
+                                            <tr>
+                                                <td><span class="badge bg-info">#@baiviet.MaBv</span></td>
+                                                <td>@baiviet.TenBv</td>
+                                                <td>
+                                                    @if (!string.IsNullOrEmpty(baiviet.NoiDung))
+                                                    {
+                                                        <span>@(baiviet.NoiDung.Length > 100 ? baiviet.NoiDung.Substring(0, 100) + "..." : baiviet.NoiDung)</span>
+                                                    }
+                                                    else
+                                                    {
+                                                        <em class="text-muted">Không có nội dung</em>
+                                                    }
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Thao tác</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            <a asp-action="Index" class="btn btn-secondary">
+                                <i class="fas fa-arrow-left"></i> Quay lại danh sách
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@Model.MaDd" class="btn btn-warning">
+                                <i class="fas fa-edit"></i> Chỉnh sửa
+                            </a>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                <i class="fas fa-trash"></i> Xóa diễn đàn
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h3>Thống kê</h3>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-7">Tổng bài viết:</dt>
+                            <dd class="col-sm-5"><span class="badge bg-primary">@Model.SoBaiViet</span></dd>
+
+                            <dt class="col-sm-7">Giáo viên tham gia:</dt>
+                            <dd class="col-sm-5"><span class="badge bg-success">@Model.GiaovienDiendans.Count</span></dd>
+                        </dl>
+                    </div>
+                </div>
+
+                @if (Model.GiaovienDiendans.Any())
+                {
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            <h3>Giáo viên tham gia</h3>
+                        </div>
+                        <div class="card-body">
+                            @foreach (var gvDiendan in Model.GiaovienDiendans)
+                            {
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="flex-grow-1">
+                                        <strong>@gvDiendan.MaGvNavigation?.TenGiaoVien</strong>
+                                        <br><small class="text-muted">Tham gia: @gvDiendan.TgTao?.ToString("dd/MM/yyyy")</small>
+                                    </div>
+                                    <span class="badge bg-success">@gvDiendan.TrangThai</span>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Xác nhận xóa diễn đàn</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bạn có chắc chắn muốn xóa diễn đàn <strong>"@Model.TieuDe"</strong>?</p>
+                    <div class="alert alert-warning">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <strong>Cảnh báo:</strong> Hành động này sẽ xóa vĩnh viễn diễn đàn và tất cả dữ liệu liên quan!
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <form asp-action="Delete" asp-route-id="@Model.MaDd" method="post" style="display: inline;">
+                        <button type="submit" class="btn btn-danger">Xóa vĩnh viễn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
