@@ -3,8 +3,55 @@
   "WorkspaceRootPath": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\data\\toieccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:data\\toieccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\ToeicManagement-HienLe\\ToeicManagement-HienLe\\ToeicCentre_Management\\Data\\TOIECContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\models\\phieubaitaponluyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\phieubaitaponluyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\models\\cauhoibaitap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\cauhoibaitap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\models\\cauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\cauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\controllers\\phieubaitaponluyenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\phieubaitaponluyenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\controllers\\diendanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\diendanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\wwwroot\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:wwwroot\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\views\\cauhois\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\cauhois\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\viewmodels\\questionbankviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:viewmodels\\questionbankviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\viewmodels\\questionformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:viewmodels\\questionformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\views\\cauhois\\questionform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -19,32 +66,16 @@
       "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\controllers\\cauhoiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\cauhoiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\data\\toieccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:data\\toieccontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\controllers\\cauhoibaitapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\cauhoibaitapscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\models\\dapan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\dapan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\models\\cauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\cauhoi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\models\\lop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,10 +96,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\views\\cauhois\\_questionstable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\cauhois\\_questionstable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\models\\cauhoibaitap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\cauhoibaitap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\views\\cauhois\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -93,18 +120,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\wwwroot\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:wwwroot\\admin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\wwwroot\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:wwwroot\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\viewmodels\\questionformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:viewmodels\\questionformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\viewmodels\\questionbankviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:viewmodels\\questionbankviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\controllers\\sinhvienscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -137,20 +152,12 @@
       "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:views\\phieubaitaponluyens\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\controllers\\phieubaitaponluyenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:controllers\\phieubaitaponluyenscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\models\\dangkyonluyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\dangkyonluyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\models\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\models\\phieubaitaponluyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|solutionrelative:models\\phieubaitaponluyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{64DBACA1-51F0-40C3-BA52-1B8BB49D045B}|ToeicCentre_Management.csproj|f:\\gitrepo\\toeicmanagement\\toeiccentre_management\\views\\home\\toeicpractice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -239,267 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Cauhoi.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cauhoi.cs",
-              "RelativeDocumentMoniker": "Models\\Cauhoi.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cauhoi.cs",
-              "RelativeToolTip": "Models\\Cauhoi.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAIwFIAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T12:38:57.543Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TOIECContext.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Data\\TOIECContext.cs",
-              "RelativeDocumentMoniker": "Data\\TOIECContext.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Data\\TOIECContext.cs",
-              "RelativeToolTip": "Data\\TOIECContext.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAuwKAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T01:56:40.083Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Lop.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Lop.cs",
-              "RelativeDocumentMoniker": "Models\\Lop.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Lop.cs",
-              "RelativeToolTip": "Models\\Lop.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T16:51:30.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CauhoibaitapsController.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\CauhoibaitapsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CauhoibaitapsController.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\CauhoibaitapsController.cs",
-              "RelativeToolTip": "Controllers\\CauhoibaitapsController.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAcwA4AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T12:25:48.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAwBUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T02:17:20.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CauhoisController.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\CauhoisController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CauhoisController.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\CauhoisController.cs",
-              "RelativeToolTip": "Controllers\\CauhoisController.cs",
-              "ViewState": "AQIAAO0AAAAAAAAAAAAmwA8BAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T09:36:05.301Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-29T16:03:44.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cauhois\\Index.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Index.cshtml",
-              "RelativeToolTip": "Views\\Cauhois\\Index.cshtml",
-              "ViewState": "AQIAAOQAAAAAAAAAAAAQwO4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-29T14:48:07.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAG8AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-29T01:54:28.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_UserLayout.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_UserLayout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_UserLayout.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_UserLayout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_UserLayout.cshtml",
-              "ViewState": "AQIAAH4AAAAAAAAAAAAAAAoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-29T02:19:51.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QuestionForm.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\QuestionForm.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cauhois\\QuestionForm.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\QuestionForm.cshtml",
-              "RelativeToolTip": "Views\\Cauhois\\QuestionForm.cshtml",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-29T14:56:04.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Cauhoibaitap.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cauhoibaitap.cs",
-              "RelativeDocumentMoniker": "Models\\Cauhoibaitap.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cauhoibaitap.cs",
-              "RelativeToolTip": "Models\\Cauhoibaitap.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T12:34:28.805Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cauhois\\Details.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Details.cshtml",
-              "RelativeToolTip": "Views\\Cauhois\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-29T15:57:47.161Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cauhois\\Delete.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Cauhois\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-29T15:57:45.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_QuestionsTable.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\_QuestionsTable.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cauhois\\_QuestionsTable.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\_QuestionsTable.cshtml",
-              "RelativeToolTip": "Views\\Cauhois\\_QuestionsTable.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-29T15:26:24.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Dapan.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Dapan.cs",
-              "RelativeDocumentMoniker": "Models\\Dapan.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Dapan.cs",
-              "RelativeToolTip": "Models\\Dapan.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T16:35:46.056Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Chitietbaithi.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Chitietbaithi.cs",
-              "RelativeDocumentMoniker": "Models\\Chitietbaithi.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Chitietbaithi.cs",
-              "RelativeToolTip": "Models\\Chitietbaithi.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T16:51:13.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Cautrucdethi.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cautrucdethi.cs",
-              "RelativeDocumentMoniker": "Models\\Cautrucdethi.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cautrucdethi.cs",
-              "RelativeToolTip": "Models\\Cautrucdethi.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T16:51:20.304Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "QuestionsApiController.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\QuestionsApiController.cs",
-              "RelativeDocumentMoniker": "Controllers\\QuestionsApiController.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\QuestionsApiController.cs",
-              "RelativeToolTip": "Controllers\\QuestionsApiController.cs",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAewJ0AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T14:48:46.759Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "GradeToeicTest.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Home\\GradeToeicTest.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\GradeToeicTest.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Home\\GradeToeicTest.cshtml",
-              "RelativeToolTip": "Views\\Home\\GradeToeicTest.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-29T09:00:31.59Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cauhois\\Create.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Create.cshtml",
-              "RelativeToolTip": "Views\\Cauhois\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-29T15:57:34.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
               "Title": "QuestionBankViewModel.cs",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\ViewModels\\QuestionBankViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\QuestionBankViewModel.cs",
@@ -511,67 +258,120 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "bootstrap-reboot.css",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-              "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-              "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-              "ViewState": "AQIAAIcBAAAAAAAAAAAAAJABAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-29T16:07:07.992Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cauhois\\Edit.cshtml",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Cauhois\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-29T15:15:28.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "admin.js",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\admin.js",
-              "RelativeDocumentMoniker": "wwwroot\\admin.js",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\admin.js",
-              "RelativeToolTip": "wwwroot\\admin.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-29T15:54:27.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "admin.css",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\admin.css",
-              "RelativeDocumentMoniker": "wwwroot\\admin.css",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\admin.css",
-              "RelativeToolTip": "wwwroot\\admin.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-29T14:59:34.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "SinhviensController.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\SinhviensController.cs",
-              "RelativeDocumentMoniker": "Controllers\\SinhviensController.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\SinhviensController.cs",
-              "RelativeToolTip": "Controllers\\SinhviensController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
+              "DocumentIndex": 4,
+              "Title": "Phieubaitaponluyen.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Phieubaitaponluyen.cs",
+              "RelativeDocumentMoniker": "Models\\Phieubaitaponluyen.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Phieubaitaponluyen.cs",
+              "RelativeToolTip": "Models\\Phieubaitaponluyen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T02:01:56.206Z"
+              "WhenOpened": "2025-06-29T12:26:11.309Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 7,
+              "Title": "PhieubaitaponluyensController.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\PhieubaitaponluyensController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PhieubaitaponluyensController.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\PhieubaitaponluyensController.cs",
+              "RelativeToolTip": "Controllers\\PhieubaitaponluyensController.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAnwKYAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:23:12.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cauhoi.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cauhoi.cs",
+              "RelativeDocumentMoniker": "Models\\Cauhoi.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cauhoi.cs",
+              "RelativeToolTip": "Models\\Cauhoi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:38:57.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T16:03:44.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CauhoisController.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\CauhoisController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CauhoisController.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\CauhoisController.cs",
+              "RelativeToolTip": "Controllers\\CauhoisController.cs",
+              "ViewState": "AQIAAO0AAAAAAAAAAAAmwA8BAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T09:36:05.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAQwGkAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T01:54:28.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TOIECContext.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Data\\TOIECContext.cs",
+              "RelativeDocumentMoniker": "Data\\TOIECContext.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Data\\TOIECContext.cs",
+              "RelativeToolTip": "Data\\TOIECContext.cs",
+              "ViewState": "AQIAAEYBAAAAAAAAAAAYwFwBAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T01:56:40.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T02:17:20.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TOIECContext.cs",
+              "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\ToeicManagement-HienLe\\ToeicManagement-HienLe\\ToeicCentre_Management\\Data\\TOIECContext.cs",
+              "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\ToeicManagement-HienLe\\ToeicManagement-HienLe\\ToeicCentre_Management\\Data\\TOIECContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T00:16:22.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "QuestionFormViewModel.cs",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\ViewModels\\QuestionFormViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\QuestionFormViewModel.cs",
@@ -583,31 +383,275 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "PhieubaitaponluyensController.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\PhieubaitaponluyensController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PhieubaitaponluyensController.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\PhieubaitaponluyensController.cs",
-              "RelativeToolTip": "Controllers\\PhieubaitaponluyensController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T12:23:12.785Z"
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cauhois\\Index.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cauhois\\Index.cshtml",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAlwIAAAACeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T14:48:07.859Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 8,
+              "Title": "DiendansController.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\DiendansController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DiendansController.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\DiendansController.cs",
+              "RelativeToolTip": "Controllers\\DiendansController.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAnwHEAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T00:11:05.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cauhoibaitap.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cauhoibaitap.cs",
+              "RelativeDocumentMoniker": "Models\\Cauhoibaitap.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cauhoibaitap.cs",
+              "RelativeToolTip": "Models\\Cauhoibaitap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:34:28.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "admin.css",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\admin.css",
+              "RelativeDocumentMoniker": "wwwroot\\admin.css",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\admin.css",
+              "RelativeToolTip": "wwwroot\\admin.css",
+              "ViewState": "AQIAADEDAAAAAAAAAAAcwGIDAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-29T14:59:34.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CauhoibaitapsController.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\CauhoibaitapsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CauhoibaitapsController.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\CauhoibaitapsController.cs",
+              "RelativeToolTip": "Controllers\\CauhoibaitapsController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAcwA4AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T12:25:48.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Lop.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Lop.cs",
+              "RelativeDocumentMoniker": "Models\\Lop.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Lop.cs",
+              "RelativeToolTip": "Models\\Lop.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:51:30.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_UserLayout.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_UserLayout.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Shared\\_UserLayout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_UserLayout.cshtml",
+              "ViewState": "AQIAAHsAAAAAAAAAAIBJwAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T02:19:51.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "QuestionForm.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\QuestionForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cauhois\\QuestionForm.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\QuestionForm.cshtml",
+              "RelativeToolTip": "Views\\Cauhois\\QuestionForm.cshtml",
+              "ViewState": "AQIAAGAAAAAAAAAAAIBJwAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T14:56:04.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cauhois\\Details.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Details.cshtml",
+              "RelativeToolTip": "Views\\Cauhois\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T15:57:47.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cauhois\\Delete.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Cauhois\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T15:57:45.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "_QuestionsTable.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\_QuestionsTable.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cauhois\\_QuestionsTable.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\_QuestionsTable.cshtml",
+              "RelativeToolTip": "Views\\Cauhois\\_QuestionsTable.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T15:26:24.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Dapan.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Dapan.cs",
+              "RelativeDocumentMoniker": "Models\\Dapan.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Dapan.cs",
+              "RelativeToolTip": "Models\\Dapan.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:35:46.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Chitietbaithi.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Chitietbaithi.cs",
+              "RelativeDocumentMoniker": "Models\\Chitietbaithi.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Chitietbaithi.cs",
+              "RelativeToolTip": "Models\\Chitietbaithi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:51:13.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Cautrucdethi.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cautrucdethi.cs",
+              "RelativeDocumentMoniker": "Models\\Cautrucdethi.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Cautrucdethi.cs",
+              "RelativeToolTip": "Models\\Cautrucdethi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:51:20.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "QuestionsApiController.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\QuestionsApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\QuestionsApiController.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\QuestionsApiController.cs",
+              "RelativeToolTip": "Controllers\\QuestionsApiController.cs",
+              "ViewState": "AQIAAIIAAAAAAAAAAIA2wJ0AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T14:48:46.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "GradeToeicTest.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Home\\GradeToeicTest.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\GradeToeicTest.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Home\\GradeToeicTest.cshtml",
+              "RelativeToolTip": "Views\\Home\\GradeToeicTest.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-29T09:00:31.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cauhois\\Create.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Create.cshtml",
+              "RelativeToolTip": "Views\\Cauhois\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T15:57:34.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "bootstrap-reboot.css",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+              "RelativeToolTip": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+              "ViewState": "AQIAAIQBAAAAAAAAAIBJwJABAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-29T16:07:07.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cauhois\\Edit.cshtml",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Cauhois\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Cauhois\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-29T15:15:28.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "admin.js",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\admin.js",
+              "RelativeDocumentMoniker": "wwwroot\\admin.js",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\admin.js",
+              "RelativeToolTip": "wwwroot\\admin.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-29T15:54:27.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SinhviensController.cs",
+              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\SinhviensController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SinhviensController.cs",
+              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\SinhviensController.cs",
+              "RelativeToolTip": "Controllers\\SinhviensController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T02:01:56.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "style.css",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\style.css",
               "RelativeDocumentMoniker": "wwwroot\\style.css",
               "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\style.css",
               "RelativeToolTip": "wwwroot\\style.css",
-              "ViewState": "AQIAAAIAAAAAAAAAAIBJwCoAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAEBVwCoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-06-29T13:10:16.19Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "QuestionsApiController.cs",
               "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\QuestionsApiController.cs",
               "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\QuestionsApiController.cs",
@@ -617,19 +661,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 31,
               "Title": "Lichsuduyetch.cs",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Lichsuduyetch.cs",
               "RelativeDocumentMoniker": "Models\\Lichsuduyetch.cs",
               "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Lichsuduyetch.cs",
               "RelativeToolTip": "Models\\Lichsuduyetch.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBkAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwBkAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T14:50:55.852Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 34,
               "Title": "CauHoi.cs",
               "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\CauHoi.cs",
               "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\CauHoi.cs",
@@ -639,7 +683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "Phanloaich.cs",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Phanloaich.cs",
               "RelativeDocumentMoniker": "Models\\Phanloaich.cs",
@@ -651,7 +695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "ToeicMockTest.cshtml",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Home\\ToeicMockTest.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\ToeicMockTest.cshtml",
@@ -663,7 +707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "TOEICPractice.cshtml",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Home\\TOEICPractice.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\TOEICPractice.cshtml",
@@ -675,7 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "UserToeicMockTest.cshtml",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Home\\UserToeicMockTest.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\UserToeicMockTest.cshtml",
@@ -687,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 37,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Phieubaitaponluyens\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Phieubaitaponluyens\\Index.cshtml",
@@ -699,19 +743,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "Sinhvien.cs",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Sinhvien.cs",
               "RelativeDocumentMoniker": "Models\\Sinhvien.cs",
               "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Sinhvien.cs",
               "RelativeToolTip": "Models\\Sinhvien.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAA9wEAAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowEAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-29T12:35:08.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "Dangkyonluyen.cs",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Dangkyonluyen.cs",
               "RelativeDocumentMoniker": "Models\\Dangkyonluyen.cs",
@@ -723,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "UserToeicPractice.cshtml",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Home\\UserToeicPractice.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\UserToeicPractice.cshtml",
@@ -735,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Sinhviens\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Sinhviens\\Index.cshtml",
@@ -747,19 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Phieubaitaponluyen.cs",
-              "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Phieubaitaponluyen.cs",
-              "RelativeDocumentMoniker": "Models\\Phieubaitaponluyen.cs",
-              "ToolTip": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Models\\Phieubaitaponluyen.cs",
-              "RelativeToolTip": "Models\\Phieubaitaponluyen.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T12:26:11.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Phieubaitaponluyens\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Phieubaitaponluyens\\Edit.cshtml",
@@ -771,7 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "DangkythithusController.cs",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\DangkythithusController.cs",
               "RelativeDocumentMoniker": "Controllers\\DangkythithusController.cs",
@@ -783,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "Index.cshtml",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -795,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -807,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -819,7 +851,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "DangkyonluyensController.cs",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Controllers\\DangkyonluyensController.cs",
               "RelativeDocumentMoniker": "Controllers\\DangkyonluyensController.cs",
@@ -831,7 +863,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "UserViewResults.cshtml",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\Views\\Home\\UserViewResults.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\UserViewResults.cshtml",
@@ -843,7 +875,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "TOIECContext.cs",
               "DocumentMoniker": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\TOIECContext.cs",
               "ToolTip": "E:\\Tai lieu hoc tap\\K\u00EC 2 n\u0103m 4\\TT CNTT\\Visual Project\\QuanLyToeic\\ToeicCentre_Management\\Models\\TOIECContext.cs",
@@ -853,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "style.css",
               "DocumentMoniker": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\frontend\\style.css",
               "RelativeDocumentMoniker": "wwwroot\\frontend\\style.css",
@@ -862,6 +894,16 @@
               "ViewState": "AQIAAFIDAAAAAAAAAAAcwG0DAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-05-29T02:35:14.597Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }

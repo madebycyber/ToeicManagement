@@ -1,0 +1,178 @@
+﻿@model ToeicCentre_Management.ViewModels.DienDanPreviewViewModel
+
+@{
+    ViewData["Title"] = "Xem trước đơn đề nghị";
+    Layout = "_Layout";
+}
+
+<div id="forum-preview-content">
+    <header class="page-header content-header">
+        <h1><span class="header-icon">📋</span>Xem trước đơn đề nghị</h1>
+    </header>
+
+    <div id="content-wrapper">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Official Document Preview -->
+                        <div class="official-document" style="background: white; padding: 40px; border: 2px solid #000; font-family: 'Times New Roman', serif;">
+                            <div class="text-center mb-4">
+                                <h4 style="font-weight: bold; margin: 0;">CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h4>
+                                <h5 style="margin: 0;">Độc lập - Tự do - Hạnh phúc</h5>
+                                <div style="border-bottom: 3px solid #000; width: 300px; margin: 10px auto;"></div>
+                            </div>
+
+                            <div class="text-center mb-4">
+                                <h3 style="font-weight: bold; text-transform: uppercase;">ĐƠN ĐỀ NGHỊ TẠO DIỄN DÀN</h3>
+                                <h4>HỖ TRỢ ÔN LUYỆN VÀ THI THỬ TOEIC</h4>
+                            </div>
+
+                            <div class="mb-3">
+                                <p><strong>Kính gửi:</strong> <span style="border-bottom: 1px dotted; display: inline-block; min-width: 400px;">Lãnh đạo Khoa Ngoại ngữ</span></p>
+                                <p><strong>Tôi tên là:</strong> <span style="border-bottom: 1px dotted; display: inline-block; min-width: 300px;">@Model.DonDeNghi?.TenNguoiDn</span></p>
+                                <p><strong>Chức vụ:</strong> <span style="border-bottom: 1px dotted; display: inline-block; min-width: 200px;">@Model.DonDeNghi?.ChucVu</span></p>
+                                <p><strong>Đơn vị:</strong> <span style="border-bottom: 1px dotted; display: inline-block; min-width: 200px;">@Model.DonDeNghi?.DonVi</span></p>
+                                <p><strong>Ngày viết đơn:</strong> <span style="border-bottom: 1px dotted; display: inline-block; min-width: 150px;">@Model.DonDeNghi?.NgayVietDon?.ToString("dd/MM/yyyy")</span></p>
+                            </div>
+
+                            <p style="text-align: justify; line-height: 1.6;">
+                                <strong>Nội dung đề nghị:</strong><br>
+                                Nhằm hỗ trợ tốt hơn cho học viên trong quá trình ôn luyện và thi thử TOEIC,
+                                tôi xin đề nghị Ban lãnh đạo cho phép tạo một diễn đàn trực tuyến chuyên biệt trong
+                                hệ thống học tập, với các thông tin chi tiết sau đây:
+                            </p>
+
+                            <div style="margin: 20px 0;">
+                                <p><strong>1. Tên diễn đàn đề xuất:</strong></p>
+                                <p style="border-bottom: 1px dotted; padding-bottom: 5px; margin-left: 20px;">@Model.TieuDe</p>
+
+                                <p><strong>2. Mục đích:</strong></p>
+                                <p style="border-bottom: 1px dotted; padding-bottom: 5px; margin-left: 20px;">@Model.DonDeNghi?.MucDich</p>
+
+                                <p><strong>3. Nội dung và chủ đề thảo luận chính:</strong></p>
+                                <div style="border: 1px dotted; padding: 10px; margin-left: 20px; min-height: 60px;">
+                                    @Model.DonDeNghi?.NoiDung
+                                </div>
+
+                                <p><strong>4. Hình thức triển khai:</strong></p>
+                                <p style="border-bottom: 1px dotted; padding-bottom: 5px; margin-left: 20px;">@Model.DonDeNghi?.HinhThucTrienKhai</p>
+
+                                <p><strong>5. Lợi ích kỳ vọng:</strong></p>
+                                <div style="border: 1px dotted; padding: 10px; margin-left: 20px; min-height: 60px;">
+                                    @Model.DonDeNghi?.LoiIchKyVong
+                                </div>
+                            </div>
+
+                            <p style="text-align: justify; line-height: 1.6;">
+                                <strong>Trân trọng cảm ơn!</strong>
+                            </p>
+
+                            <div style="text-align: right; margin-top: 40px;">
+                                <p><strong>Người đề nghị</strong></p>
+                                <p><em>(Ký và ghi rõ họ tên)</em></p>
+                                <div style="height: 60px;"></div>
+                                <p><strong>@Model.DonDeNghi?.TenNguoiDn</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Thông tin bổ sung</h3>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-5">Người tạo:</dt>
+                            <dd class="col-sm-7">@Model.NguoiTao</dd>
+
+                            <dt class="col-sm-5">Ghi chú:</dt>
+                            <dd class="col-sm-7">@(Model.GhiChu ?? "Không có")</dd>
+
+                            <dt class="col-sm-5">Số bài viết:</dt>
+                            <dd class="col-sm-7">
+                                <span class="badge bg-info">@(Model.SelectedBaiviets?.Length ?? 0)</span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h3>Xác nhận</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-info">
+                            <i class="fas fa-info-circle"></i>
+                            Vui lòng kiểm tra kỹ thông tin trước khi xác nhận tạo diễn đàn.
+                        </p>
+
+                        <form asp-action="ConfirmCreate" method="post">
+                            <input type="hidden" asp-for="DonDeNghi.MaDdn" />
+                            <input type="hidden" asp-for="TieuDe" />
+                            <input type="hidden" asp-for="NguoiTao" />
+                            <input type="hidden" asp-for="GhiChu" />
+
+                            @if (Model.SelectedBaiviets != null)
+                            {
+                                @for (int i = 0; i < Model.SelectedBaiviets.Length; i++)
+                                {
+                                    <input type="hidden" name="SelectedBaiviets[@i]" value="@Model.SelectedBaiviets[i]" />
+                                }
+                            }
+
+                            <div class="d-grid gap-2">
+                                <a asp-action="Create" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-left"></i> Quay lại chỉnh sửa
+                                </a>
+                                <button type="submit" class="btn btn-success">
+                                    <i class="fas fa-check"></i> Xác nhận tạo diễn đàn
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-outline-primary w-100" onclick="window.print()">
+                            <i class="fas fa-print"></i> In đơn đề nghị
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        @@media print {
+            .page-header, .card, .btn, .sidebar, .main-content, #content-wrapper > .row > .col-md-4
+
+        {
+            display: none !important;
+        }
+
+        .official-document {
+            border: 2px solid #000 !important;
+            padding: 40px !important;
+            font-family: 'Times New Roman', serif !important;
+            background: white !important;
+        }
+
+        body {
+            background: white !important;
+        }
+
+        .col-md-8 {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        }
+    </style>
+}

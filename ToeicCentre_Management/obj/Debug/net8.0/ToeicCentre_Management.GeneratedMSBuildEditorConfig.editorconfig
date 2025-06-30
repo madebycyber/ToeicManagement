@@ -114,6 +114,30 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuZ2t5dGhpdGh1c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/GitRepo/ToeicManagement/ToeicCentre_Management/Views/Diendans/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbmRhbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/GitRepo/ToeicManagement/ToeicCentre_Management/Views/Diendans/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbmRhbnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/GitRepo/ToeicManagement/ToeicCentre_Management/Views/Diendans/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbmRhbnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/GitRepo/ToeicManagement/ToeicCentre_Management/Views/Diendans/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbmRhbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/GitRepo/ToeicManagement/ToeicCentre_Management/Views/Diendans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbmRhbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/GitRepo/ToeicManagement/ToeicCentre_Management/Views/Diendans/Preview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGllbmRhbnNcUHJldmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/GitRepo/ToeicManagement/ToeicCentre_Management/Views/Home/GradeToeicTest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHcmFkZVRvZWljVGVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

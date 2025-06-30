@@ -262,7 +262,7 @@ public partial class TOIECContext : DbContext
 
         modelBuilder.Entity<Diendan>(entity =>
         {
-            entity.Property(e => e.MaDd).ValueGeneratedNever();
+            entity.Property(e => e.MaDd).ValueGeneratedOnAdd();
 
             entity.HasOne(d => d.MaDdnNavigation).WithMany(p => p.Diendans).HasConstraintName("FK_DIENDAN_DONDENGHITAODD");
         });
@@ -415,7 +415,7 @@ public partial class TOIECContext : DbContext
 
         modelBuilder.Entity<Phieubaitaponluyen>(entity =>
         {
-            entity.Property(e => e.IdPhieuBaiTap).ValueGeneratedNever();
+            entity.Property(e => e.IdPhieuBaiTap).ValueGeneratedOnAdd();
 
             entity.HasOne(d => d.MaSvNavigation).WithMany(p => p.Phieubaitaponluyens).HasConstraintName("FK_PHIEUBAITAPONLUYEN_SINHVIEN");
         });

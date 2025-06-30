@@ -1,0 +1,167 @@
+﻿@model ToeicCentre_Management.ViewModels.DienDanEditViewModel
+
+@{
+    ViewData["Title"] = "Chỉnh sửa diễn đàn";
+    Layout = "_Layout";
+}
+
+<div id="forum-edit-content">
+    <header class="page-header content-header">
+        <h1><span class="header-icon">✏️</span>Chỉnh sửa diễn đàn</h1>
+    </header>
+
+    <div id="content-wrapper">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Thông tin diễn đàn #@Model.MaDd</h3>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Edit" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                            <input type="hidden" asp-for="MaDd" />
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label asp-for="TieuDe" class="form-label"></label>
+                                    <input asp-for="TieuDe" class="form-control">
+                                    <span asp-validation-for="TieuDe" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label asp-for="NguoiTao" class="form-label"></label>
+                                    <input asp-for="NguoiTao" class="form-control">
+                                    <span asp-validation-for="NguoiTao" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label asp-for="TrangThai" class="form-label"></label>
+                                    <select asp-for="TrangThai" asp-items="Model.TrangThaiOptions" class="form-control">
+                                        <option value="">-- Chọn trạng thái --</option>
+                                    </select>
+                                    <span asp-validation-for="TrangThai" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label asp-for="HanhDong" class="form-label"></label>
+                                    <select asp-for="HanhDong" asp-items="Model.HanhDongOptions" class="form-control">
+                                        <option value="">-- Chọn hành động --</option>
+                                    </select>
+                                    <span asp-validation-for="HanhDong" class="text-danger"></span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="GhiChu" class="form-label"></label>
+                                <textarea asp-for="GhiChu" class="form-control" rows="4" placeholder="Ghi chú thêm về diễn đàn"></textarea>
+                                <span asp-validation-for="GhiChu" class="text-danger"></span>
+                            </div>
+
+                            <div class="form-actions d-flex justify-content-between">
+                                <a asp-action="Index" class="btn btn-secondary">
+                                    <i class="fas fa-arrow-left"></i> Quay lại danh sách
+                                </a>
+                                <div>
+                                    <a asp-action="Details" asp-route-id="@Model.MaDd" class="btn btn-info me-2">
+                                        <i class="fas fa-eye"></i> Xem chi tiết
+                                    </a>
+                                    <button type="submit" class="btn btn-success">
+                                        <i class="fas fa-save"></i> Lưu thay đổi
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Thông tin bổ sung</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info">
+                            <h6><i class="fas fa-info-circle"></i> Lưu ý khi chỉnh sửa:</h6>
+                            <ul class="mb-0">
+                                <li>Thay đổi trạng thái sẽ ảnh hưởng đến khả năng truy cập của người dùng</li>
+                                <li>Đóng diễn đàn sẽ ngăn không cho thêm bài viết mới</li>
+                                <li>Mọi thay đổi sẽ được ghi log hệ thống</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-3">
+                    <div class="card-header">
+                        <h3>Trạng thái hiện tại</h3>
+                    </div>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-sm-6">Mã diễn đàn:</dt>
+                            <dd class="col-sm-6"><span class="badge bg-primary">#@Model.MaDd</span></dd>
+
+                            <dt class="col-sm-6">Trạng thái:</dt>
+                            <dd class="col-sm-6">
+                                @if (Model.TrangThai == "Chờ duyệt")
+                                {
+                                    <span class="badge bg-warning">Chờ duyệt</span>
+                                }
+                                else if (Model.TrangThai == "Đã duyệt")
+                                {
+                                    <span class="badge bg-success">Đã duyệt</span>
+                                }
+                                else if (Model.TrangThai == "Từ chối")
+                                {
+                                    <span class="badge bg-danger">Từ chối</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">@Model.TrangThai</span>
+                                }
+                            </dd>
+
+                            <dt class="col-sm-6">Hành động:</dt>
+                            <dd class="col-sm-6">
+                                @if (Model.HanhDong == "Mở")
+                                {
+                                    <span class="badge bg-success">Mở</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">Đóng</span>
+                                }
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        // Status change confirmation
+        document.querySelector('select[name="TrangThai"]').addEventListener('change', function() {
+            const selectedValue = this.value;
+            if (selectedValue === 'Từ chối') {
+                if (!confirm('Bạn có chắc chắn muốn từ chối diễn đàn này? Hành động này sẽ thông báo cho người tạo.')) {
+                    this.value = this.getAttribute('data-original-value') || '';
+                }
+            }
+        });
+
+        // Store original values
+        document.addEventListener('DOMContentLoaded', function() {
+            const selects = document.querySelectorAll('select');
+            selects.forEach(select => {
+                select.setAttribute('data-original-value', select.value);
+            });
+        });
+    </script>
+}
