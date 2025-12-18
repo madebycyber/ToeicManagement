@@ -65,27 +65,34 @@ namespace ToeicCentre_Management.Controllers
 			return Ok(result);
 		}
 
-		// DELETE: api/questions/{id}
-		[HttpDelete("{id}")]
-		public async Task<IActionResult> DeleteQuestion(int id)
-		{
-			var question = await _context.Cauhois.FindAsync(id);
-			if (question == null) return NotFound();
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteQuestion(int id)
+        {
+            var question = await _context.Cauhois
+                .Include(q => q.Dapans)
+                .FirstOrDefaultAsync(q => q.MaCh == id);
 
-			try
-			{
-				_context.Cauhois.Remove(question);
-				await _context.SaveChangesAsync();
-				return NoContent();
-			}
-			catch (DbUpdateException)
-			{
-				return BadRequest("Không thể xóa câu hỏi này vì nó đang được sử dụng trong một đề thi hoặc có lịch sử duyệt. Vui lòng kiểm tra lại.");
-			}
-		}
+            if (question == null) return NotFound();
 
-		// GET: api/questions/{id}/classification
-		[HttpGet("{id}/classification")]
+            try
+            {
+                // Xóa các Dapan liên quan trước
+                if (question.Dapans.Any())
+                {
+                    _context.Dapans.RemoveRange(question.Dapans);
+                }
+
+                _context.Cauhois.Remove(question);
+                await _context.SaveChangesAsync();
+                return NoContent();
+            }
+            catch (DbUpdateException)
+            {
+                return BadRequest("Không thể xóa câu hỏi này vì nó đang được sử dụng trong một đề thi hoặc có lịch sử duyệt. Vui lòng kiểm tra lại.");
+            }
+        }
+        // GET: api/questions/{id}/classification
+        [HttpGet("{id}/classification")]
 		public async Task<IActionResult> GetClassification(int id)
 		{
 			var classification = await _context.Phanloaiches.AsNoTracking().FirstOrDefaultAsync(p => p.MaCh == id);

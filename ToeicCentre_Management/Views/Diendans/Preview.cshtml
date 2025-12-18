@@ -9,7 +9,17 @@
     <header class="page-header content-header">
         <h1><span class="header-icon">📋</span>Xem trước đơn đề nghị</h1>
     </header>
-
+    <div id="customAlert" class="alert-container" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; border: 1px solid #ccc; border-radius: 5px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); z-index: 1050; width: 300px; text-align: center; padding: 20px;">
+        <div class="alert-header" style="background-color: #4fc3f7; color: white; padding: 10px; border-radius: 5px 5px 0 0;">
+            <h5 style="margin: 0; font-size: 1.1rem;">Xác nhận</h5>
+        </div>
+        <div class="alert-body" style="padding: 15px;">
+            <p id="alertMessage" style="margin: 0; font-size: 1rem;"></p>
+        </div>
+        <div class="alert-footer" style="padding: 10px;">
+            <button id="closeAlert" class="btn btn-secondary" style="padding: 5px 15px; font-size: 0.9rem;">Đóng</button>
+        </div>
+    </div>
     <div id="content-wrapper">
         <div class="row">
             <div class="col-md-8">
@@ -151,28 +161,90 @@
 @section Styles {
     <style>
         @@media print {
-            .page-header, .card, .btn, .sidebar, .main-content, #content-wrapper > .row > .col-md-4
+            .page-header, .card, .btn, .sidebar, .main-content, #content-wrapper > .row > .col-md-4 {
+                display: none !important;
+            }
 
-        {
-            display: none !important;
-        }
+            .official-document {
+                border: 2px solid #000 !important;
+                padding: 40px !important;
+                font-family: 'Times New Roman', serif !important;
+                background: white !important;
+            }
 
-        .official-document {
-            border: 2px solid #000 !important;
-            padding: 40px !important;
-            font-family: 'Times New Roman', serif !important;
-            background: white !important;
-        }
+            body {
+                background: white !important;
+            }
 
-        body {
-            background: white !important;
-        }
-
-        .col-md-8 {
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-
+            .col-md-8 {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
         }
     </style>
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.querySelector('form');
+            const customAlert = document.getElementById('customAlert');
+            const alertMessage = document.getElementById('alertMessage');
+            const closeAlert = document.getElementById('closeAlert');
+
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault(); // Ngăn submit mặc định
+
+                    // Gửi dữ liệu đến controller qua AJAX
+                    const formData = new FormData(form);
+
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                        }
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            return response.json();
+                        }
+                        throw new Error('Lỗi khi tạo diễn đàn');
+                    })
+                    .then(data => {
+                        if (data.success) {
+                            alertMessage.textContent = 'Tạo thành công!';
+                        } else {
+                            alertMessage.textContent = 'Tạo diễn đàn không thành công!';
+                        }
+                        customAlert.style.display = 'block'; // Hiển thị thông báo
+                    })
+                    .catch(error => {
+                        alertMessage.textContent = 'Tạo diễn đàn không thành công!';
+                        customAlert.style.display = 'block'; // Hiển thị thông báo lỗi
+                    });
+                });
+            }
+
+            if (closeAlert) {
+                closeAlert.addEventListener('click', function() {
+                    customAlert.style.display = 'none'; // Ẩn thông báo khi nhấn Đóng
+                    if (alertMessage.textContent === 'Tạo thành công!') {
+                        window.location.href = '@Url.Action("Index", "Diendans")'; // Chuyển hướng nếu thành công
+                    }
+                });
+            }
+
+            // Ẩn thông báo khi nhấn ra ngoài
+            document.addEventListener('click', function(e) {
+                if (!customAlert.contains(e.target) && e.target !== form.querySelector('button[type="submit"]')) {
+                    customAlert.style.display = 'none';
+                }
+            });
+        });
+    </script>
 }

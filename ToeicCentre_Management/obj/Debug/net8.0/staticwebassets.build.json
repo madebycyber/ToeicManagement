@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2tm7ZUqXXSPjUJOCjrH+s6NC7Ft5vGcpG6ooJmN5Q18=",
+  "Hash": "pSbCaYJs4p/x/jUc3xRfm7+YoXMxF2IBviZ8NBXIuFc=",
   "Source": "ToeicCentre_Management",
   "BasePath": "_content/ToeicCentre_Management",
   "Mode": "Default",
@@ -1421,6 +1421,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\toeic-listening-2-1.mp3"
+    },
+    {
+      "Identity": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\016a0df0-ba4f-4871-9350-bd6dee8a6c5f_452906329_1032510628880775_4199080175372581521_n.jpg",
+      "SourceId": "ToeicCentre_Management",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\",
+      "BasePath": "_content/ToeicCentre_Management",
+      "RelativePath": "uploads/questions/016a0df0-ba4f-4871-9350-bd6dee8a6c5f_452906329_1032510628880775_4199080175372581521_n.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\questions\\016a0df0-ba4f-4871-9350-bd6dee8a6c5f_452906329_1032510628880775_4199080175372581521_n.jpg"
     },
     {
       "Identity": "F:\\GitRepo\\ToeicManagement\\ToeicCentre_Management\\wwwroot\\uploads\\questions\\0896c369-0383-4905-9749-23d4c033d73a_hoanhanngau.png",

@@ -66,41 +66,56 @@ namespace ToeicCentre_Management.Controllers
             return View(viewModel);
         }
 
-        // POST: Diendans/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(DienDanCreateViewModel viewModel)
         {
             if (ModelState.IsValid)
             {
-                // Tạo đơn đề nghị trước
-                var donDeNghi = new Dondenghitaodd
+                try
                 {
-                    TenNguoiDn = viewModel.TenNguoiTao,
-                    ChucVu = "Giảng viên",
-                    DonVi = "Khoa Ngoại ngữ",
-                    NgayVietDon = DateOnly.FromDateTime(DateTime.Now),
-                    TenDienDanDeXuat = viewModel.TieuDe,
-                    MucDich = viewModel.MucDich,
-                    NoiDung = viewModel.NoiDung,
-                    HinhThucTrienKhai = viewModel.HinhThucTrienKhai,
-                    LoiIchKyVong = viewModel.LoiIchKyVong
-                };
+                    // Lấy giá trị MaDdn lớn nhất và tăng thêm 1
+                    int maxMaDdn = _context.Dondenghitaodds.Any()
+                        ? _context.Dondenghitaodds.Max(d => d.MaDdn) + 1
+                        : 1;
 
-                _context.Dondenghitaodds.Add(donDeNghi);
-                await _context.SaveChangesAsync();
+                    // Tạo Glossaries
+                    var donDeNghi = new Dondenghitaodd
+                    {
+                        MaDdn = maxMaDdn, // Gán giá trị MaDdn
+                        TenNguoiDn = viewModel.TenNguoiTao,
+                        ChucVu = "Giảng viên",
+                        DonVi = "Khoa Ngoại ngữ",
+                        NgayVietDon = DateOnly.FromDateTime(DateTime.Now),
+                        TenDienDanDeXuat = viewModel.TieuDe,
+                        MucDich = viewModel.MucDich,
+                        NoiDung = viewModel.NoiDung,
+                        HinhThucTrienKhai = viewModel.HinhThucTrienKhai,
+                        LoiIchKyVong = viewModel.LoiIchKyVong
+                    };
 
-                // Truyền dữ liệu để preview
-                var previewData = new DienDanPreviewViewModel
+                    _context.Dondenghitaodds.Add(donDeNghi);
+                    await _context.SaveChangesAsync();
+
+                    // Truyền dữ liệu để preview
+                    var previewData = new DienDanPreviewViewModel
+                    {
+                        DonDeNghi = donDeNghi,
+                        TieuDe = viewModel.TieuDe,
+                        NguoiTao = viewModel.NguoiTao,
+                        GhiChu = viewModel.GhiChu,
+                        SelectedBaiviets = viewModel.SelectedBaiviets
+                    };
+
+                    return View("Preview", previewData);
+                }
+                catch (DbUpdateException ex)
                 {
-                    DonDeNghi = donDeNghi,
-                    TieuDe = viewModel.TieuDe,
-                    NguoiTao = viewModel.NguoiTao,
-                    GhiChu = viewModel.GhiChu,
-                    SelectedBaiviets = viewModel.SelectedBaiviets
-                };
-
-                return View("Preview", previewData);
+                    ModelState.AddModelError("", "Không thể tạo đơn đề nghị do lỗi cơ sở dữ liệu");
+                    viewModel.Baiviets = new SelectList(_context.Baiviets.ToList(), "MaBv", "TenBv");
+                    viewModel.Giaoviens = new SelectList(_context.Giaoviens.ToList(), "MaGv", "TenGiaoVien");
+                    return View(viewModel);
+                }
             }
 
             viewModel.Baiviets = new SelectList(_context.Baiviets.ToList(), "MaBv", "TenBv", viewModel.SelectedBaiviets);
@@ -108,52 +123,67 @@ namespace ToeicCentre_Management.Controllers
             return View(viewModel);
         }
 
-        // POST: Diendans/ConfirmCreate
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ConfirmCreate(DienDanPreviewViewModel previewData)
         {
             if (previewData.DonDeNghi?.MaDdn != null)
             {
-                // Tạo diễn đàn
-                var diendan = new Diendan
+                try
                 {
-                    TieuDe = previewData.TieuDe,
-                    NguoiTao = previewData.NguoiTao,
-                    SoBaiViet = previewData.SelectedBaiviets?.Length ?? 0,
-                    TrangThai = "Chờ duyệt",
-                    HanhDong = "Mở",
-                    GhiChu = previewData.GhiChu,
-                    MaDdn = previewData.DonDeNghi.MaDdn
-                };
+                    // Lấy giá trị MaDd lớn nhất và tăng thêm 1
+                    int maxMaDd = _context.Diendans.Any()
+                        ? _context.Diendans.Max(d => d.MaDd) + 1
+                        : 1;
 
-                _context.Diendans.Add(diendan);
-                await _context.SaveChangesAsync();
-
-                // Tạo quan hệ giáo viên - diễn đàn
-                if (!string.IsNullOrEmpty(previewData.NguoiTao))
-                {
-                    var giaovien = await _context.Giaoviens
-                        .FirstOrDefaultAsync(g => g.TenGiaoVien == previewData.NguoiTao);
-
-                    if (giaovien != null)
+                    // Tạo diễn đàn
+                    var diendan = new Diendan
                     {
-                        var gvDiendan = new GiaovienDiendan
-                        {
-                            MaDd = diendan.MaDd,
-                            MaGv = giaovien.MaGv,
-                            TgTao = DateTime.Now,
-                            TrangThai = "Hoạt động"
-                        };
-                        _context.GiaovienDiendans.Add(gvDiendan);
-                    }
-                }
+                        MaDd = maxMaDd,
+                        TieuDe = previewData.TieuDe,
+                        NguoiTao = previewData.NguoiTao,
+                        SoBaiViet = previewData.SelectedBaiviets?.Length ?? 0,
+                        TrangThai = "Chờ duyệt",
+                        HanhDong = "Mở",
+                        GhiChu = previewData.GhiChu,
+                        MaDdn = previewData.DonDeNghi.MaDdn
+                    };
 
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                    _context.Diendans.Add(diendan);
+                    await _context.SaveChangesAsync();
+
+                    // Tạo quan hệ giáo viên - diễn đàn
+                    if (!string.IsNullOrEmpty(previewData.NguoiTao))
+                    {
+                        var giaovien = await _context.Giaoviens
+                            .FirstOrDefaultAsync(g => g.TenGiaoVien == previewData.NguoiTao);
+
+                        if (giaovien != null)
+                        {
+                            var gvDiendan = new GiaovienDiendan
+                            {
+                                MaDd = diendan.MaDd,
+                                MaGv = giaovien.MaGv,
+                                TgTao = DateTime.Now,
+                                TrangThai = "Hoạt động"
+                            };
+                            _context.GiaovienDiendans.Add(gvDiendan);
+                        }
+                    }
+
+                    await _context.SaveChangesAsync();
+
+                    // Trả về JSON với trạng thái thành công
+                    return Json(new { success = true });
+                }
+                catch (DbUpdateException ex)
+                {
+                    // Trả về JSON với trạng thái thất bại
+                    return Json(new { success = false, error = "Không thể tạo diễn đàn do lỗi cơ sở dữ liệu: " + ex.InnerException?.Message });
+                }
             }
 
-            return BadRequest();
+            return Json(new { success = false, error = "Dữ liệu không hợp lệ" });
         }
 
         // GET: Diendans/Edit/5

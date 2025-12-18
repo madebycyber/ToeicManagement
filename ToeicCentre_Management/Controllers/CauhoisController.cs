@@ -145,7 +145,7 @@ namespace ToeicCentre_Management.Controllers
                 ? await _context.Cauhois.Include(q => q.Dapans).FirstOrDefaultAsync(q => q.MaCh == viewModel.Id)
                 : new Cauhoi();
 
-            if (question == null) return NotFound();
+            if (question == null && viewModel.Id > 0) return NotFound();
 
             if (viewModel.CreateNewGroup && (viewModel.GroupPassageText != null || viewModel.GroupAudioFile != null))
             {
@@ -153,14 +153,15 @@ namespace ToeicCentre_Management.Controllers
                 {
                     NdDoanVan = viewModel.GroupPassageText,
                     IdGiaoVienTao = currentUserId,
-                    MaPt = viewModel.SelectedPartId.HasValue ? viewModel.SelectedPartId.Value : 0 // Kiểm tra nullable
+                    MaPt = viewModel.SelectedPartId.HasValue ? viewModel.SelectedPartId.Value : 0
                 };
                 if (viewModel.GroupAudioFile != null)
                 {
                     newGroup.PathAudioNhom = await SaveFile(viewModel.GroupAudioFile);
                 }
                 _context.Nhomches.Add(newGroup);
-                question.MaNhomChNavigation = newGroup;
+                await _context.SaveChangesAsync(); // Lưu để lấy MaNhomCh
+                question.MaNhomCh = newGroup.MaNhomCh; // Liên kết với nhóm mới
             }
 
             question.NdCauHoi = viewModel.QuestionContent;
@@ -169,10 +170,28 @@ namespace ToeicCentre_Management.Controllers
 
             if (viewModel.ImageFile != null)
             {
+                // Xóa file cũ nếu tồn tại
+                if (!string.IsNullOrEmpty(question.PathHinhAnh))
+                {
+                    var oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, question.PathHinhAnh.TrimStart('/'));
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
                 question.PathHinhAnh = await SaveFile(viewModel.ImageFile);
             }
             if (viewModel.AudioFile != null)
             {
+                // Xóa file cũ nếu tồn tại
+                if (!string.IsNullOrEmpty(question.PathAudioRieng))
+                {
+                    var oldAudioPath = Path.Combine(_webHostEnvironment.WebRootPath, question.PathAudioRieng.TrimStart('/'));
+                    if (System.IO.File.Exists(oldAudioPath))
+                    {
+                        System.IO.File.Delete(oldAudioPath);
+                    }
+                }
                 question.PathAudioRieng = await SaveFile(viewModel.AudioFile);
             }
 
@@ -180,39 +199,54 @@ namespace ToeicCentre_Management.Controllers
             {
                 question.IdGiaoVienTaoCh = currentUserId;
                 question.MaTtCh = 1; // 1 = Chờ duyệt
-                question.NgayTaoCh = DateOnly.FromDateTime(DateTime.UtcNow); // Sử dụng DateOnly
+                question.NgayTaoCh = DateOnly.FromDateTime(DateTime.UtcNow);
                 _context.Cauhois.Add(question);
             }
             else // Cập nhật
             {
-                question.NgayCapNhatCh = DateOnly.FromDateTime(DateTime.UtcNow); // Sử dụng DateOnly
+                question.NgayCapNhatCh = DateOnly.FromDateTime(DateTime.UtcNow);
+                _context.Cauhois.Update(question); // Cập nhật thay vì thêm mới
             }
 
             UpdateAnswers(question, viewModel);
             await _context.SaveChangesAsync();
 
-            // Chỉ tạo phân loại khi là câu hỏi mới
-            if (viewModel.Id == 0 && viewModel.SelectedPartId.HasValue)
+            // Chỉ tạo hoặc cập nhật phân loại khi có SelectedPartId
+            var existingClassification = await _context.Phanloaiches.FirstOrDefaultAsync(p => p.MaCh == question.MaCh);
+            if (viewModel.SelectedPartId.HasValue)
             {
                 var partInfo = await _context.Phanthis.AsNoTracking().FirstOrDefaultAsync(p => p.MaPt == viewModel.SelectedPartId.Value);
                 if (partInfo != null)
                 {
-                    var classification = new Phanloaich
+                    if (existingClassification == null)
                     {
-                        MaCh = question.MaCh,
-                        MaPt = viewModel.SelectedPartId.Value,
-                        MaKn = partInfo.MaKn.HasValue ? partInfo.MaKn.Value : 0,
-                        MaMdk = 2 // Tạm gán mức độ Trung bình
-                    };
-                    _context.Phanloaiches.Add(classification);
+                        var classification = new Phanloaich
+                        {
+                            MaCh = question.MaCh,
+                            MaPt = viewModel.SelectedPartId.Value,
+                            MaKn = partInfo.MaKn.HasValue ? partInfo.MaKn.Value : 0,
+                            MaMdk = 2 // Tạm gán mức độ Trung bình
+                        };
+                        _context.Phanloaiches.Add(classification);
+                    }
+                    else
+                    {
+                        existingClassification.MaPt = viewModel.SelectedPartId.Value;
+                        existingClassification.MaKn = partInfo.MaKn.HasValue ? partInfo.MaKn.Value : 0;
+                        existingClassification.MaMdk = 2; // Cập nhật mức độ nếu cần
+                    }
                     await _context.SaveChangesAsync();
                 }
+            }
+            else if (existingClassification != null && !viewModel.SelectedPartId.HasValue)
+            {
+                _context.Phanloaiches.Remove(existingClassification); // Xóa phân loại nếu không chọn Part
+                await _context.SaveChangesAsync();
             }
 
             return RedirectToAction(nameof(Index));
         }
 
-        // POST: QuestionBank/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
@@ -220,8 +254,8 @@ namespace ToeicCentre_Management.Controllers
             try
             {
                 var cauhoi = await _context.Cauhois
-                    .Include(c => c.Dapans) // Bao gồm các Dapan liên quan
-                    .Include(c => c.Phanloaiches) // Bao gồm các Phanloaich liên quan
+                    .Include(c => c.Dapans)
+                    .Include(c => c.Phanloaiches)
                     .FirstOrDefaultAsync(c => c.MaCh == id);
 
                 if (cauhoi == null)
@@ -253,7 +287,7 @@ namespace ToeicCentre_Management.Controllers
                     _context.Phanloaiches.RemoveRange(cauhoi.Phanloaiches);
                 }
 
-                // Xóa các bản ghi Dapan liên quan
+                // Xóa các bản ghi Dapan liên quan trước
                 if (cauhoi.Dapans.Any())
                 {
                     _context.Dapans.RemoveRange(cauhoi.Dapans);
@@ -262,14 +296,12 @@ namespace ToeicCentre_Management.Controllers
                 // Xóa Cauhoi
                 _context.Cauhois.Remove(cauhoi);
 
-                // Lưu tất cả thay đổi cùng lúc
                 await _context.SaveChangesAsync();
 
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception ex)
             {
-                // Log lỗi (bạn có thể tích hợp logging như Serilog hoặc ILogger)
                 Console.WriteLine($"Error deleting question: {ex.Message}");
                 return View("Error", new { message = "An error occurred while deleting the question. Please try again." });
             }

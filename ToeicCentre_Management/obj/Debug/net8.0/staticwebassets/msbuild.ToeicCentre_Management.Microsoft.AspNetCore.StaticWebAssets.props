@@ -1168,6 +1168,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ToeicCentre_Management.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\016a0df0-ba4f-4871-9350-bd6dee8a6c5f_452906329_1032510628880775_4199080175372581521_n.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>ToeicCentre_Management</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ToeicCentre_Management</BasePath>
+      <RelativePath>uploads/questions/016a0df0-ba4f-4871-9350-bd6dee8a6c5f_452906329_1032510628880775_4199080175372581521_n.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\016a0df0-ba4f-4871-9350-bd6dee8a6c5f_452906329_1032510628880775_4199080175372581521_n.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\uploads\questions\0896c369-0383-4905-9749-23d4c033d73a_hoanhanngau.png))">
       <SourceType>Package</SourceType>
       <SourceId>ToeicCentre_Management</SourceId>
